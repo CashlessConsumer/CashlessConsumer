@@ -13,8 +13,11 @@ A simple web page which generates UPI deep link and a QRCode for the deep link. 
 * HTML5 Boilerplate [https://html5boilerplate.com/mobile](https://html5boilerplate.com/mobile)
 * Jquery.QRCode [http://jeromeetienne.github.io/jquery-qrcode/](http://jeromeetienne.github.io/jquery-qrcode/)
 
+##Disclaimer
+* This page only helps in populating the values to make a payment. Please verify the details before making the payment inside the UPI app.
+
 ##Privacy
-* The HTML page does not collect any payment related data entered on the page and the UPI link and QR Code is generated at the client side. It is up to the user to share this to anyone who wants to use this link and pay.
+* The HTML page DOES NOT collect any payment related data entered on the page and the UPI link and QR Code is generated at the client side. It is up to the user to share this to anyone who wants to use this link and pay.
 
 ##License
 

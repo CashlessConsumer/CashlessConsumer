@@ -3,7 +3,7 @@ function getLink() {
             "&pn=" + $('#pn').val() +
             "&tn=" + $('#tn').val() +
             "&am=" + $('#am').val();
-    $('#paylink').html("<a href=" + encodeURI(paymentStr) + ">" + paymentStr + "</a>");
+    $('#paylink').html("<a href=" + encodeURI(paymentStr) + ">Pay ₹" + $('#am').val() + " to " + $('#pn').val() + "</a>");
     $('#btnCopyLink').show();
     $('#btnWA').show();
     return paymentStr;
@@ -20,10 +20,9 @@ function copyLink() {
     $('#htmllink').show();
 }
 
+/* TODO -- Find a way to send to WA. Custom URL Scheme sends as text
 function shareWA() {
     var message = encodeURIComponent($('#paylink').html());
     var whatsapp_url = "whatsapp://send?html=" + message;
     window.location.href = whatsapp_url;
-
-
-}
+} */
