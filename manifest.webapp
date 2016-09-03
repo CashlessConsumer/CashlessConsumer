@@ -1,0 +1,26 @@
+{
+  "version": "1.0.0",
+  "name": "UPI-PayMeLinkGenerator",
+  "launch_path": "/index.html",
+  "description": "Deep link generator for UPI based payments",
+  "icons": {
+    "60": "/img/touch/touch-icon-60x60.png",
+    "128": "/img/touch/touch-icon-128x128.png"
+  },
+  "developer": {
+    "name": "Srikanth L",
+    "url": "http://github.com/srikanthlogic"
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "default_locale": "en",
+  "permissions": {
+  },
+  "locales": {
+    "en": {
+      "name": "UPI-PayMeLinkGenerator",
+      "description": "Deep link generator for UPI based payments."
+    }
+  }
+}
