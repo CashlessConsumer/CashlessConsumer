@@ -2,22 +2,34 @@ function getLink() {
     var paymentStr = "upi://pay?pa=" + $('#pa').val() +
             "&pn=" + $('#pn').val() +
             "&tn=" + $('#tn').val() +
-            "&am=" + $('#am').val();
+            "&am=" + $('#am').val() +
+            "&refUrl=" + $('#refurl').val();
     $('#paylink').html("<a href=" + encodeURI(paymentStr) + ">Pay ₹" + $('#am').val() + " to " + $('#pn').val() + "</a>");
     $('#btnCopyLink').show();
-    $('#btnWA').show();
     return paymentStr;
 }
 
 function getQRCode() {
     var paymentStr = getLink(),
-        encodedPaymentStr = encodeURI(paymentStr);
+		encodedPaymentStr = encodeURI(paymentStr);
+    $('#payQRCode').html('');
     $('#payQRCode').qrcode(encodedPaymentStr);
+    $('#btnDownloadQRCode').show();
 }
 
 function copyLink() {
     $('#htmllink').val($('#paylink').html());
     $('#htmllink').show();
+}
+
+function downloadQRCode() {
+    html2canvas($("#payQRCode"), {
+        onrendered: function (canvas) {
+            canvas.toBlob(function (blob) {
+				saveAs(blob, "QRCode.png");
+            });
+        }
+    });
 }
 
 /* TODO -- Find a way to send to WA. Custom URL Scheme sends as text

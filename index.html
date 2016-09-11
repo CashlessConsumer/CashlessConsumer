@@ -37,7 +37,7 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.7.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     </head>
     <body>
 
@@ -65,11 +65,18 @@
                     <td>Amount  ₹ </td>
                     <td><input type="text" id="am" value="500"/></td>
                 </tr>
+                <tr>
+                    <td>Referring URL </td>
+                    <td><input type="url" id="refurl" value="http://twitter.com/logic"/></td>
+                </tr>                
             </table> 
             <br/>
             <input type="button" id="btnGetlink" value="Get link" onclick="getLink()" class="btnLink"/>
             <input type="button" id="btnGetQRCode" value="Get QRCode" class="btnQRCode" onclick="getQRCode()"/>
-            <input type="button" id="btnCopyLink" value="HTML Snippet" class="btnCopy" onclick="copyLink()" hidden="true">            
+            <br/>
+            <br/>
+            <input type="button" id="btnCopyLink" value="HTML Snippet" class="btnCopy" onclick="copyLink()" hidden="true">
+            <input type="button" id="btnDownloadQRCode" value="Download QRCode" class="btnDownload" onclick="downloadQRCode()" hidden="true">
             <br/>
             <br/>
             <div id="paylink"></div>
@@ -86,6 +93,9 @@
         
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2014-11-29/FileSaver.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+        
         <script src="js/helper.js"></script>
         <script src="js/main.js"></script>
 
