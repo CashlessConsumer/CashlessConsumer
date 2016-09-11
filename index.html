@@ -1,113 +1,138 @@
 <!DOCTYPE html>
 <html class="no-js">
-    <head>
-        <meta charset="utf-8">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="HandheldFriendly" content="True">
-        <meta name="MobileOptimized" content="320">
-        <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-        <meta http-equiv="cleartype" content="on">
+	<head>
+		<meta charset="utf-8">
+		<title>UPI Pay Me Link Generator</title>
+		<meta name="description" content="">
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+		<meta http-equiv="cleartype" content="on">
 
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/touch/apple-touch-icon-144x144-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/touch/apple-touch-icon-114x114-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/touch/apple-touch-icon-72x72-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" href="img/touch/apple-touch-icon-57x57-precomposed.png">
-        <link rel="shortcut icon" sizes="196x196" href="img/touch/touch-icon-196x196.png">
-        <link rel="shortcut icon" href="img/touch/apple-touch-icon.png">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/touch/apple-touch-icon-144x144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/touch/apple-touch-icon-114x114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/touch/apple-touch-icon-72x72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="img/touch/apple-touch-icon-57x57-precomposed.png">
+		<link rel="shortcut icon" sizes="196x196" href="img/touch/touch-icon-196x196.png">
+		<link rel="shortcut icon" href="img/touch/apple-touch-icon.png">
 
-        <!-- Tile icon for Win8 (144x144 + tile color) -->
-        <meta name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png">
-        <meta name="msapplication-TileColor" content="#222222">
+		<!-- Tile icon for Win8 (144x144 + tile color) -->
+		<meta name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png">
+		<meta name="msapplication-TileColor" content="#222222">
 
-        <!-- SEO: If mobile URL is different from desktop URL, add a canonical link to the desktop page -->
-        <!--
-        <link rel="canonical" href="http://www.example.com/" >
-        -->
+		<!-- SEO: If mobile URL is different from desktop URL, add a canonical link to the desktop page -->
+		<!--
+		<link rel="canonical" href="http://www.example.com/" >
+		-->
 
-        <!-- Add to homescreen for Chrome on Android -->
-        <!--
-        <meta name="mobile-web-app-capable" content="yes">
-        -->
+		<!-- Add to homescreen for Chrome on Android -->
+		<!--
+		<meta name="mobile-web-app-capable" content="yes">
+		-->
 
-        <!-- This script prevents links from opening in Mobile Safari. https://gist.github.com/1042026 -->
-        <!--
-        <script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>
-        -->
+		<!-- This script prevents links from opening in Mobile Safari. https://gist.github.com/1042026 -->
+		<!--
+		<script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>
+		-->
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-    </head>
-    <body>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	</head>
+	<body>
 
-        <!-- Add your site or application content here -->
-        <div class="title"><h3>UPI Payment Link Generator</h3></div>
-        <p> Generate <a href="en.wikipedia.org/wiki/Unified_Payment_Interface">UPI</a> deep link to let others pay you with few clicks.</p>
-        <p> Enter your name and your VPA to get a link.</p>
-        <p> When the link is clicked / QR Code is scanned on a mobile with UPI app, it opens the payment screen directly.</p>
-        <div class="inputs">            
-            <table class="center">
-                <tr>
-                    <td>Payee Name</td>
-                    <td><input type="text" id="pn" value="Srikanth"/></td>                
-                </tr>
-                <tr>
-                    <td>Payee VPA</td>
-                    <td><input type="text" id="pa" value="logic@axisbank"/></td>
-                </tr>
-                
-                <tr>
-                    <td>Transaction Note</td>
-                    <td><input type="text" id="tn" value="Test"/></td>
-                </tr>
-                <tr>
-                    <td>Amount  ₹ </td>
-                    <td><input type="text" id="am" value="500"/></td>
-                </tr>
-                <tr>
-                    <td>Referring URL </td>
-                    <td><input type="url" id="refurl" value="http://twitter.com/logic"/></td>
-                </tr>                
-            </table> 
-            <br/>
-            <input type="button" id="btnGetlink" value="Get link" onclick="getLink()" class="btnLink"/>
-            <input type="button" id="btnGetQRCode" value="Get QRCode" class="btnQRCode" onclick="getQRCode()"/>
-            <br/>
-            <br/>
-            <input type="button" id="btnCopyLink" value="HTML Snippet" class="btnCopy" onclick="copyLink()" hidden="true">
-            <input type="button" id="btnDownloadQRCode" value="Download QRCode" class="btnDownload" onclick="downloadQRCode()" hidden="true">
-            <br/>
-            <br/>
-            <div id="paylink"></div>
-            <br/>
-            <div id="payQRCode"></div>
-            <br/>
-            <textarea id="htmllink" class="htmllink" hidden="true"></textarea>
-        </div>
-        
-        <div class="footer">
-            <a href="https://github.com/srikanthlogic/UPI-PayMeLinkGenerator">Code</a>
-            <a href="https://github.com/srikanthlogic/UPI-PayMeLinkGenerator#disclaimer">Disclaimer</a>
-        </div>
-        
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2014-11-29/FileSaver.min.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
-        
-        <script src="js/helper.js"></script>
-        <script src="js/main.js"></script>
+		<!-- Add your site or application content here -->
+		<div class="title"><h3>UPI Payment Link Generator</h3></div>
+		<p> Generate <a href="en.wikipedia.org/wiki/Unified_Payment_Interface">UPI</a> deep link to let others pay you with few clicks.</p>
+		<p> Enter your name and your VPA to get a link.</p>
+		<p> When the link is clicked / QR Code is scanned on a mobile with UPI app, it opens the payment screen directly.</p>
+		<div class="inputs">
+			<table class="center">
+				<tr>
+					<td>Payee Name</td>
+					<td><input type="text" id="pn" value="Srikanth"/></td>
+				</tr>
+				<tr>
+					<td>Payee VPA</td>
+					<td>
+					<div style='width:100%;'>
+						<input style='width:40%;' type="text" id="pa" value="logic"/>
+						<label style='width:1%;'>@</label>
+						<input style='width:43%;' type="text" id="psp" list="psplist" value="axisbank"/>
+					</div>
+					</td>
+					<datalist id="psplist">
+						<option value="axisbank">
+						<option value="utbi">
+						<option value="ubi">
+						<option value="united">
+						<option value="unionbank">
+						<option value="uboi">
+						<option value="cnrb">
+						<option value="uco">
+						<option value="andb">
+						<option value="sib">
+						<option value="kbl">
+						<option value="federal">
+						<option value="mahab">
+						<option value="pockets">
+						<option value="csbpay">
+						<option value="tjsb">
+						<option value="icici">
+						<option value="ybl">
+					</datalist>
+				</tr>
 
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				<tr>
+					<td>Transaction Note</td>
+					<td><input type="text" id="tn" value="Test"/></td>
+				</tr>
+				<tr>
+					<td>Amount  ₹ </td>
+					<td><input type="text" id="am" value="500"/></td>
+				</tr>
+				<tr>
+					<td>Referring URL </td>
+					<td><input type="url" id="refurl" value="http://twitter.com/logic"/></td>
+				</tr>
+			</table>
+			<br/>
+			<input type="button" id="btnGetlink" value="Get link" onclick="getLink()" class="btnLink"/>
+			<input type="button" id="btnGetQRCode" value="Get QRCode" class="btnQRCode" onclick="getQRCode()"/>
+			<br/>
+			<br/>
+			<input type="button" id="btnCopyLink" value="HTML Snippet" class="btnCopy" onclick="copyLink()" hidden="true">
+			<input type="button" id="btnDownloadQRCode" value="Download QRCode" class="btnDownload" onclick="downloadQRCode()" hidden="true">
+			<br/>
+			<br/>
+			<div id="paylink"></div>
+			<br/>
+			<div id="payQRCode"></div>
+			<br/>
+			<textarea id="htmllink" class="htmllink" hidden="true"></textarea>
+		</div>
+		<div class="footer">
+			<a href="https://github.com/srikanthlogic/UPI-PayMeLinkGenerator">Code</a>
+			<a href="https://github.com/srikanthlogic/UPI-PayMeLinkGenerator#disclaimer">Disclaimer</a>
+		</div>
 
-          ga('create', 'UA-83520638-1', 'auto');
-          ga('send', 'pageview');
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2014-11-29/FileSaver.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
 
-        </script>
-    </body>
+		<script src="js/helper.js"></script>
+		<script src="js/main.js"></script>
+
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-83520638-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+	</body>
 </html>
