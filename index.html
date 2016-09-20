@@ -60,9 +60,9 @@
 					<td>Payee VPA</td>
 					<td>
 					<div style='width:100%;'>
-						<input style='width:40%;' type="text" id="pa" value="logic"/>
+						<input style='width:38%;' type="text" id="pa" value="logic"/>
 						<label style='width:1%;'>@</label>
-						<input style='width:43%;' type="text" id="psp" list="psplist" value="axisbank"/>
+						<input style='width:38%;' type="text" id="psp" list="psplist" value="axisbank"/>
 					</div>
 					</td>
 					<datalist id="psplist">
@@ -100,12 +100,11 @@
 				</tr>
 			</table>
 			<br/>
-			<input type="button" id="btnGetlink" value="Get link" onclick="getLink()" class="btnLink"/>
-			<input type="button" id="btnGetQRCode" value="Get QRCode" class="btnQRCode" onclick="getQRCode()"/>
 			<br/>
-			<br/>
-			<input type="button" id="btnCopyLink" value="HTML Snippet" class="btnCopy" onclick="copyLink()" hidden="true">
-			<input type="button" id="btnDownloadQRCode" value="Download QRCode" class="btnDownload" onclick="downloadQRCode()" hidden="true">
+			<a onclick="getLink()"><img src="img/Link-48.png" alt="Get Link" title="Get Link"></a>
+			<a onclick="getQRCode()"><img src="img/QR%20Code-48.png" alt="Get QRCode" title="Get QRCode"><a/>
+			<a hidden="true" id="HTMLSnippet" onclick="copyHTMLSnippet()"><img src="img/HTML-52.png" alt="HTML Snippet" title="HTML Snippet"><a/>
+			<a hidden="true" id="DownloadQRCode" onclick="downloadQRCode()"><img src="img/Download-48.png" alt="Download QRCode" title="Download QRCode"><a/>
 			<br/>
 			<br/>
 			<div id="paylink"></div>
@@ -119,16 +118,13 @@
 			<a href="https://github.com/srikanthlogic/UPI-PayMeLinkGenerator">Code</a>
 			<a href="https://github.com/srikanthlogic/UPI-PayMeLinkGenerator#disclaimer">Disclaimer</a>
 		</div>
-
 		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 		<script async="async" type="text/javascript" src="https://cdn.jsdelivr.net/jquery.jssocials/1.3.1/jssocials.min.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2014-11-29/FileSaver.min.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
-
 		<script src="js/helper.js"></script>
 		<script src="js/main.js"></script>
-
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

@@ -6,7 +6,7 @@ function getLink() {
 			"&am=" + $('#am').val() +
 			"&refUrl=" + $('#refurl').val();
 	$('#paylink').html("<a href=" + encodeURI(paymentStr) + ">Pay ₹" + $('#am').val() + " to " + $('#pn').val() + "</a>");
-	$('#btnCopyLink').show();
+	$('#HTMLSnippet').show();
 	return paymentStr;
 }
 
@@ -15,10 +15,10 @@ function getQRCode() {
 		encodedPaymentStr = encodeURI(paymentStr);
 	$('#payQRCode').html('');
 	$('#payQRCode').qrcode(encodedPaymentStr);
-	$('#btnDownloadQRCode').show();
+	$('#DownloadQRCode').show();
 }
 
-function copyLink() {
+function copyHTMLSnippet() {
 	$('#htmllink').val($('#paylink').html());
 	$('#htmllink').show();
 }
