@@ -33,6 +33,24 @@ function downloadQRCode() {
 	});
 }
 
+$(window).load(function () {
+	 $("#shareIcons").jsSocials({
+		url: "http://www.srik.me/UPI-PaymeLink",
+		text: "UPI Payment Link Generator",
+		showCount: true,
+		showLabel: false,
+		showCount: "inside",
+		shares: [
+			"email",
+			{ share: "twitter", via: "logic", hashtags: "#UPIApps" },
+			"facebook",
+			"googleplus",
+			"linkedin",
+			"whatsapp"
+		]
+	});
+});
+
 /* TODO -- Find a way to send to WA. Custom URL Scheme sends as text
 function shareWA() {
 	var message = encodeURIComponent($('#paylink').html());
