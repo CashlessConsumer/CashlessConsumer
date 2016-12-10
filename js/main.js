@@ -99,14 +99,14 @@ function printQRCode() {
 
 $(window).load(function () {
 	 $("#shareIcons").jsSocials({
-		url: "http://www.srik.me/UPI-PaymeLink",
-		text: "UPI Payment Link Generator",
+		url: "https://srikanthlogic.github.io/CashlessConsumer/linkgen.html",
+		text: "UPI QRCode Generator",
 		showCount: true,
 		showLabel: false,
 		showCount: "inside",
 		shares: [
 			"email",
-			{ share: "twitter", via: "logic", hashtags: "#UPIApps" },
+			{ share: "twitter", via: "logic", hashtags: "#CashlessConsumer" },
 			"facebook",
 			"googleplus",
 			"linkedin",
