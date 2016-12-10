@@ -3,12 +3,10 @@ function getLink() {
 			"@" + $('#psp').val() +
 			"&pn=" + $('#pn').val() +
 			"&tn=" + $('#tn').val() +
-			"&am=" + $('#am').val() +
-			"&refUrl=" + $('#refurl').val();
+			"&am=" + $('#am').val();
 	if ($('#am').val() === "") {
 		$('#paylink').html("<a href=" + encodeURI(paymentStr) + ">Pay to " + $('#pn').val() + " using UPI</a>");
-	}
-	else {
+	} else {
 		$('#paylink').html("<a href=" + encodeURI(paymentStr) + ">Pay ₹" + $('#am').val() + " to " + $('#pn').val() + " using UPI</a>");
 	}
 	$('#HTMLSnippet').show();
@@ -16,12 +14,24 @@ function getLink() {
 }
 
 function getQRCode() {
+
 	var paymentStr = getLink(),
 		encodedPaymentStr = encodeURI(paymentStr);
+
+	var options = {
+		text : encodedPaymentStr,
+		mode : 4,
+		minVersion : 5,
+		mSize : 0.1,
+		mPosX : 0.5,
+		mPosY : 0.5,
+		image : $('#upilogo')[0]
+	};
+
 	$('#payQRCode').html('');
-	$('#payQRCode').qrcode(encodedPaymentStr);
+	$('#payQRCode').qrcode(options);
 	$('#DownloadQRCode').show();
-	$('#PrintQRCode').show();
+	//$('#PrintQRCode').show();
 }
 
 function getEncodedString(val) {

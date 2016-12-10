@@ -2,7 +2,7 @@
 <html class="no-js">
 	<head>
 		<meta charset="utf-8">
-		<title>UPI QR Code Generator for variable denominations</title>
+		<title>UPI Pay Me Link Generator</title>
 		<meta name="description" content="">
 		<meta name="HandheldFriendly" content="True">
 		<meta name="MobileOptimized" content="320">
@@ -16,6 +16,7 @@
 		<link rel="shortcut icon" sizes="196x196" href="img/touch/touch-icon-196x196.png">
 		<link rel="shortcut icon" href="img/touch/apple-touch-icon.png">
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"/>
+
 		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.jssocials/1.3.1/jssocials.css" />
 		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.jssocials/1.3.1/jssocials-theme-flat.css" />
 
@@ -40,18 +41,20 @@
 		-->
 
 		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/skeleton.css">
 		<link rel="stylesheet" href="css/main.css">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 	</head>
 	<body>
 
 		<!-- Add your site or application content here -->
-		<div class="title"><h3>UPI Payment Mobile QR Code generator</h3></div>
-		<p> Generate <a href="en.wikipedia.org/wiki/Unified_Payment_Interface">UPI</a> QR Codes to let others pay you with few clicks.</p>
+		<div class="container">
+		<div class="title"><h3>UPI Payment Link Generator</h3></div>
+		<p> Generate <a href="en.wikipedia.org/wiki/Unified_Payment_Interface">UPI</a> deep link to let others pay you with few clicks.</p>
 		<p> Enter your name and your VPA to get a link.</p>
 		<p> When the link is clicked / QR Code is scanned on a mobile with UPI app, it opens the payment screen directly.</p>
-		<div class="inputs">
-			<table class="center">
+		<div class="five columns">
+			<table class="four columns">
 				<tr>
 					<td>Payee Name</td>
 					<td><input type="text" id="pn" value="Srikanth"/></td>
@@ -77,7 +80,6 @@
 						<option value="mahab">
 						<option value="pockets">
 						<option value="sib">
-						<option value="sbi">
 						<option value="tjsb">
 						<option value="ubi">
 						<option value="uboi">
@@ -86,97 +88,43 @@
 						<option value="united">
 						<option value="unionbank">
 						<option value="ybl">
-						<option value="yesbank">
 					</datalist>
 				</tr>
 				<tr>
 					<td>Transaction Note</td>
 					<td><input type="text" id="tn" value="Test"/></td>
 				</tr>
-				<tr hidden="true">
+				<tr>
 					<td>Amount  ₹ </td>
 					<td><input type="text" id="am" value="500"/></td>
 				</tr>
-
+				<tr>
+					<td>Referring URL </td>
+					<td><input type="url" id="refurl" value="http://twitter.com/logic"/></td>
+				</tr>
 			</table>
 			<br/>
 			<br/>
-			<!--<a onclick="getLink()"><img src="img/Link-48.png" alt="Get Link" title="Get Link"></a>-->
-			<a onclick="getQRCodeList()"><img src="img/QR%20Code-48.png" alt="Get QRCode" title="Get QRCode"><a/>
-			<!--<a hidden="true" id="HTMLSnippet" onclick="copyHTMLSnippet()"><img src="img/HTML-52.png" alt="HTML Snippet" title="HTML Snippet"><a/>-->
+			<a onclick="getLink()"><img src="img/Link-48.png" alt="Get Link" title="Get Link"></a>
+			<a onclick="getQRCode()"><img src="img/QR%20Code-48.png" alt="Get QRCode" title="Get QRCode"><a/>
+			<a hidden="true" id="HTMLSnippet" onclick="copyHTMLSnippet()"><img src="img/HTML-52.png" alt="HTML Snippet" title="HTML Snippet"><a/>
 			<a hidden="true" id="DownloadQRCode" onclick="downloadQRCode()"><img src="img/Download-48.png" alt="Download QRCode" title="Download QRCode"><a/>
 			<a hidden="true" id="PrintQRCode" onclick="printQRCode()"><img src="img/Print-48.png" alt="Print QRCode" title="Print QRCode"></a>
 			<br/>
 			<br/>
 			<div id="printableArea">
-				<table class="center" hidden="true">
-					<tr>
-						<th>QRCode</th>
-						<th>Amount</th>
-					</tr>
-					<tr>
-						<td>
-							<div id="payQRCodeAny"></div>
-						</td>
-						<td>
-							Any Amount
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<div id="payQRCode10"></div>
-						</td>
-						<td>
-							₹10
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<div id="payQRCode20"></div>
-						</td>
-						<td>
-							₹20
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<div id="payQRCode50"></div>
-						</td>
-						<td>
-							₹50
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<div id="payQRCode100"></div>
-						</td>
-						<td>
-							₹100
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<div id="payQRCode500"></div>
-						</td>
-						<td>
-							<h1>₹500</h3>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<div id="payQRCode1000"></div>
-						</td>
-						<td>
-							₹1000
-						</td>
-					</tr>
-				</table>
+				<div id="payQRCode"></div>
+				<br/>
+				<div id="paylink"></div>
+				<br/>
 			</div>
+			<textarea id="htmllink" class="htmllink" hidden="true"></textarea>
 		</div>
 		<div class="footer">
 			<div id="shareIcons"></div>
 			<a href="https://github.com/srikanthlogic/UPI-PayMeLinkGenerator">Code</a>
 			<a href="https://github.com/srikanthlogic/UPI-PayMeLinkGenerator#disclaimer">Disclaimer</a>
+		</div>
 		</div>
 		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 		<script async="async" type="text/javascript" src="https://cdn.jsdelivr.net/jquery.jssocials/1.3.1/jssocials.min.js"></script>
