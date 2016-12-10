@@ -1,8 +1,4 @@
-# [UPI-PayMeLinkGenerator](http://github.com/srikanthlogic/UPI-PayMeLinkGenerator)
-
-A simple web page which generates UPI deep link and a QRCode for the deep link. The deep link / QR Code when opened with any of the UPI app should populate the values for the user to complete the payment.
-
-* Source: [https://github.com/srikanthlogic/UPI-PayMeLinkGenerator](https://github.com/srikanthlogic/UPI-PayMeLinkGenerator)
+# [CashlessConsumer] - (http://srikanthlogic.github.io/CashlessConsumer/FAQ)
 
 ## Links
 * UPI [https://en.wikipedia.org/wiki/Unified_Payments_Interface](https://en.wikipedia.org/wiki/Unified_Payments_Interface)
@@ -15,6 +11,12 @@ A simple web page which generates UPI deep link and a QRCode for the deep link. 
 * FileSaver [https://github.com/eligrey/FileSaver.js/](https://github.com/eligrey/FileSaver.js/)
 * HTML2Canvas [http://html2canvas.hertzen.com/](http://html2canvas.hertzen.com/)
 * Iconset [https://icons8.com](https://icons8.com)
+
+## [UPI-PayMeLinkGenerator](http://github.com/srikanthlogic/UPI-PayMeLinkGenerator)
+
+A simple web page which generates UPI deep link and a QRCode for the deep link. The deep link / QR Code when opened with any of the UPI app should populate the values for the user to complete the payment.
+
+* Source: [https://github.com/srikanthlogic/UPI-PayMeLinkGenerator](https://github.com/srikanthlogic/UPI-PayMeLinkGenerator)
 
 ##Disclaimer
 * This page only helps in populating the values to make a payment. Please verify the details before making the payment inside the UPI app.
