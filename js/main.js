@@ -4,8 +4,8 @@ function getLink() {
 			"&pn=" + $('#pn').val() +
 			"&tn=" + $('#tn').val() +
 			"&am=" + $('#am').val();
-	if ($('#am').val() === "") {
-		$('#paylink').html("<a href=" + encodeURI(paymentStr) + ">Pay to " + $('#pn').val() + " using UPI</a>");
+	if ($('#am').val() !== '') {
+		$('#paylink').html("<a href=" + encodeURI(paymentStr) + ">Pay " + $('#pn').val() + " using UPI</a>");
 	} else {
 		$('#paylink').html("<a href=" + encodeURI(paymentStr) + ">Pay ₹" + $('#am').val() + " to " + $('#pn').val() + " using UPI</a>");
 	}
@@ -30,8 +30,10 @@ function getQRCode() {
 
 	$('#payQRCode').html('');
 	$('#payQRCode').qrcode(options);
+	$('#printVPA').html('UPI : ' + $('#pa').val() + "@" + $('#psp').val())
 	$('#DownloadQRCode').show();
-	//$('#PrintQRCode').show();
+	$('#upifulllogo').show();
+	$('#PrintQRCode').show();
 }
 
 function getEncodedString(val) {
@@ -39,6 +41,10 @@ function getEncodedString(val) {
 	paymentStr = getLink();
 	return encodeURI(paymentStr);
 
+}
+
+function generatePhoneQRCode() {
+	getQRCode();
 }
 
 function getQRCodeList() {
@@ -69,32 +75,7 @@ function downloadQRCode() {
 }
 
 function printQRCode() {
-	/*var restorepage = document.body.innerHTML;
-	var printcontent = document.getElementById('printableArea).innerHTML;
-	document.body.innerHTML = printcontent;
 	window.print();
-	document.body.innerHTML = restorepage;*/
-	//$('#printableArea').print();
-	//window.print();
-
-	var doc = new jsPDF()
-
-	var dataUrl = qr.canvas('http://cyberair.co.uk').toDataURL('image/jpeg');
-	doc.addImage(dataUrl);
-		doc.save();
-
-	var specialElementHandlers = {
-		'#payQRCode': function (element, renderer) {
-			return true;
-		}
-	};
-
-	doc.fromHTML($('#printableArea').html(), 15, 15, {
-		'width': 170,
-		'elementHandlers': specialElementHandlers
-	});
-	doc.save('a4.pdf');
-
 }
 
 $(window).load(function () {
