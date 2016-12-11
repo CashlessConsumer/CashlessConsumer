@@ -87,6 +87,7 @@
 						<option value="icici">
 						<option value="idfcbank">
 						<option value="indus">
+						<option value="kaypay">
 						<option value="kbl">
 						<option value="mahab">
 						<option value="pnb">
@@ -117,8 +118,8 @@
 			<center>
 				<div class="row">
 					<a onclick="getLink()"><img src="img/Link-48.png" alt="Get Link" title="Get Link"></a>
-					<a onclick="getQRCode()"><img src="img/QR%20Code-48.png" alt="Get QRCode" title="Get QRCode"><a/>
-					<a hidden="true" id="HTMLSnippet" onclick="copyHTMLSnippet()"><img src="img/HTML-52.png" alt="HTML Snippet" title="HTML Snippet"><a/>
+					<a onclick="getQRCode()"><img src="img/QR%20Code-48.png" alt="Get QRCode" title="Get QRCode"></a>
+					<a hidden="true" id="HTMLSnippet" onclick="copyHTMLSnippet()"><img src="img/HTML-52.png" alt="HTML Snippet" title="HTML Snippet"></a>
 					<a hidden="true" id="DownloadQRCode" onclick="downloadQRCode()"><img src="img/Download-48.png" alt="Download QRCode" title="Download QRCode"></a>
 					<a hidden="true" id="PrintQRCode" onclick="printQRCode()"><img src="img/Print-48.png" alt="Print QRCode" title="Print QRCode"></a>
 				</div>
@@ -126,10 +127,12 @@
 			<br/>
 			<div id="printableArea">
 				<div id="payQRCode"></div>
-				<br/>
-				<div id="paylink"></div>
+				<div id="printVPA"></div>
+				<img src="img/UPILogo.jpg" id="upifulllogo" width="20%" height="30%" hidden="true"/>
 				<br/>
 			</div>
+			<div id="paylink"></div>
+			<br/>
 			<textarea id="htmllink" class="htmllink" hidden="true"></textarea>
 			</center>
 		</div>

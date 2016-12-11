@@ -417,3 +417,7 @@ there.
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
+
+@media print {
+	.row, .footer, .intro {display: none;};
+}
