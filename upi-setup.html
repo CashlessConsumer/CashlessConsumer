@@ -40,7 +40,7 @@
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<div class="container">
 		<div class="row">
-			<h2>#CashlessConsumer FAQs</a></h2>
+			<h2>UPI Setup - #CashlessConsumer</h2>
 		</div>
 		<div class="row">
 			<div class="two columns"><a href="./index.html" >Home</a></div>
@@ -48,35 +48,61 @@
 			<div class="two columns"><a href="./qrcode.html">UPI QRCode</a></div>
 			<div class="two columns"><a href="./faq.html">FAQ</a></div>
 		</div>
+		<br/>
+		<div class="row">
+			<h5>1. How can I use #UPI?</h5>
+			<p> UPI needs an Android phone (iOS support coming soon), mobile data / WiFi , Mobile number registered with bank and a PSP application (Payment Service Provider, which can you be any bank / company) installed and setup on your phone.</p>
 
-	<div class="row">
-		<h4 id="FAQ">UPI Setup</h4>
+			<h5>2. Getting started</h5>
+			<p>Check if your bank supports UPI, Install a UPI app, setup your VPA(Virtual Payment address) and link your bank accounts, setup M-PIN, transact.</p>
 
-		<h5>1. How can I use #UPI?</h5>
-		<p> UPI needs an Android phone (iOS support coming soon), mobile data / WiFi , Mobile number registered with bank and a PSP application (Payment Service Provider, which can you be any bank / company) installed and setup on your phone.</p>
+			<h5>3. Supported banks and apps</h5>
+			<p> Check if your bank is offering UPI support from <a href="http://www.npci.org.in/UPI_Livemembers.aspx">list maintained by NPCI (UPI operator)</a>. Pick and install any app from <a href="./applist.html">UPI Apps</a>. If you are confused, check <a href="http://bit.ly/UPIApps">app comparison for help.</a> </p>
 
-		<h5>2. Getting started</h5>
-		<p>Check if your bank supports UPI, Install a UPI app, setup your VPA(Virtual Payment address) and link your bank accounts, setup M-PIN, transact.</p>
+			<h5>4. Register in app</h5>
+			<p> The app would register you by sending an SMS, choose the SIM having mobile linked to your bank account. Provide basic profile details, setup app lock password.</p>
 
-		<h5>3. Supported banks and apps</h5>
-		<p> Check if your bank is offering UPI support from <a href="http://www.npci.org.in/UPI_Livemembers.aspx">list maintained by NPCI (UPI operator)</a>. Pick and install any app from <a href="./applist.html">UPI Apps</a>. If you are confused, check <a href="http://bit.ly/UPIApps">app comparison for help.</a> </p>
+			<h5>5. Setup VPA, Link bank account</h5>
+			<p> VPA is Virtual Payment Address, similar to email address. This is what is needed to send / receive money. You no longer need to share bank account number, IFSC code, mobile number etc. Create your VPA. Select the bank in which you have an account, it would list accounts registered to your mobile number. Link it to the VPA.</p>
 
-		<h5>4. Register in app</h5>
-		<p> The app would register you by sending an SMS, choose the SIM having mobile linked to your bank account. Provide basic profile details, setup app lock password.</p>
+			<h5>6. Send / Receive money from your bank accounts to others</h5>
+			<p> To receive money, you just need to share your VPA to other person who is sending money. To send money, you also need to setup M-PIN, similar to your ATM PIN. If you know your M-PIN, you can send money to other VPA, Bank account + IFSC code. You can generate your M-PIN using the option in the app if you have debit card associated with the bank account. Chose generate M-PIN, enter last 6 digits of debit card, one time password you will get and then set you M-PIN.</p>
+			<p>Note :- Never share your M-PIN with anyone. Its just like your ATM M-PIN. Remember to block your SIM card, if you happen to loose SIM card, debit card together.</p>
 
-		<h5>5. Setup VPA, Link bank account</h5>
-		<p> VPA is Virtual Payment Address, similar to email address. This is what is needed to send / receive money. You no longer need to share bank account number, IFSC code, mobile number etc. Create your VPA. Select the bank in which you have an account, it would list accounts registered to your mobile number. Link it to the VPA.</p>
+			<h5>7. QR Codes</h5>
+			<p> Since typing VPA to transfer money can be time consuming, you can <a href="./qrcode.html">generate your QRCode</a> for any VPA, any person can scan your QRCode and it would directly open payments screen on their UPI app. They would still need to enter amount and M-PIN to complete the transaction.</p>
 
-		<h5>6. Send / Receive money from your bank accounts to others</h5>
-		<p> To receive money, you just need to share your VPA to other person who is sending money. To send money, you also need to setup M-PIN, similar to your ATM PIN. If you know your M-PIN, you can send money to other VPA, Bank account + IFSC code. You can generate your M-PIN using the option in the app if you have debit card associated with the bank account. Chose generate M-PIN, enter last 6 digits of debit card, one time password you will get and then set you M-PIN.</p>
-		<p>Note :- Never share your M-PIN with anyone. Its just like your ATM M-PIN. Remember to block your SIM card, if you happen to loose SIM card, debit card together.</p>
-
-		<h5>7. QR Codes</h5>
-		<p> Since typing VPA to transfer money can be time consuming, you can <a href="./qrcode.html">generate your QRCode</a> for any VPA, any person can scan your QRCode and it would directly open payments screen on their UPI app. They would still need to enter amount and M-PIN to complete the transaction.</p>
-
-		<h5>More questions</h5>
-		<p> Detailed FAQ including security best practises coming soon.</p>
+			<h5>More questions ?</h5>
+			<p> Detailed FAQ including security best practises coming soon.</p>
+		</div>
+		<center><div id="sharesocial"/></center>
 	</div>
-</body>
+	<!-- End Document
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.jssocials/1.3.1/jssocials.min.js"></script>
+	<script>
+		$("#sharesocial").jsSocials({
+			url: "https://srikanthlogic.github.io/CashlessConsumer/upi-setup.html",
+			text: "Understanding #UPI #CashlessConsumer",
+			showCount: "inside",
+			showLabel: false,
+			shareIn: "popup",
+			shares: ["email", "twitter", "facebook", "whatsapp", "googleplus"]
+	  });
+
+	</script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-83520638-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+
+	</body>
 </html>
