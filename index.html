@@ -15,12 +15,13 @@
 
 	<!-- FONT
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"/>
 
 	<!-- CSS
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/normalize.css"/>
+	<link rel="stylesheet" href="css/skeleton.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
 	<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" integrity="sha384-Wrgq82RsEean5tP3NK3zWAemiNEXofJsTwTyHmNb/iL3dP/sZJ4+7sOld1uqYJtE" crossorigin="anonymous">
 	<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.3.1/jssocials.css" />
 	<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.3.1/jssocials-theme-flat.css" />
@@ -36,41 +37,52 @@
 </head>
 <body>
 
-	<!-- Primary Page Layout
-	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<div class="container">
-		<div class="row">
-			<h2>Understanding UPI - #CashlessConsumer initiative</h2>
-		</div>
-		<div class="row">
-			<div class="two columns"><a href="./upi-setup.html">UPI Setup</a></div>
-			<div class="two columns"><a href="./applist.html">UPI Apps</a></div>
-			<div class="two columns"><a href="./qrcode.html">UPI QRCode</a></div>
-			<div class="two columns"><a href="./about.html">FAQ</a></div>
-			<div class="two columns"><a href="./askus.html">Ask us</a></div>
-		</div>
-
-		<div class="row">
-			<div class="one-half column" style="margin-top: 5%" lang="ta">
-				<h4>Unified Payments Interface</h4>
-					<p>Unified Payments Interface (UPI) is a system that powers multiple bank accounts (of participating banks), several banking services features like fund transfer (P2P), and merchant payments in a single mobile application. UPI was launched by <a href="http://www.npci.org.in/">National Payments Corporation of India</a> (a not for profit run by coalition of banks) with Reserve Bank of India's (RBI) vision of migrating towards a 'less-cash' and more digital society. UPI has built on the Immediate Payment Service(IMPS) platform. (From <a href="https://en.wikipedia.org/wiki/Unified_Payments_Interface">Wikipedia</a>)
-
-
-			</div>
-			<div class="one-half column" style="margin-top: 5%" lang="en">
-				<h4>Features</h4>
-				<ul>
-					<li>No need to share your bank account number</li>
-					<li>Instant transfer of money across bank accounts</li>
-					<li>Create email like payment addresses</li>
-					<li>QRCode based payments</li>
-					<li>Send / Receive money <b>to your bank account</b></li>
+	<header>
+		<div class="container">
+			<div class="row">
+				<ul class="nav">
+					<li class="active"><a href="./upi-setup.html">Home</a></li>
+					<li><a href="./upi-setup.html">How to Install</a></li>
+					<li><a href="./applist.html">UPI Apps</a></li>
+					<li><a href="./qrcode.html">Get QR Code</a></li>
+					<li><a href="./about.html">FAQ</a></li>
+					<li><a href="./askus.html">Ask Us</a></li>
 				</ul>
+				<div id="logo"><a href="index.html">#CashlessConsumer</a></div>
 			</div>
 		</div>
-		<center><div id="sharesocial"/></center>
+	</header>
+	<article>
+		<div class="row">
+			<div class="jumbotron">
+				<div class="container">
+					<h1>Understanding UPI</h1>
+				</div>
+			</div>
+		</div>
+		<div class="container content">
+			<div class="row">
+				<div class="one-half column">
+					<h2>Unified Payments Interface</h2>
+						<p>Unified Payments Interface (UPI) is a system that powers multiple bank accounts (of participating banks), several banking services features like fund transfer (P2P), and merchant payments in a single mobile application. UPI was launched by <a href="http://www.npci.org.in/">National Payments Corporation of India <i class="fa fa-external-link"></i></a> (a not for profit run by coalition of banks) with Reserve Bank of India's (RBI) vision of migrating towards a 'less-cash' and more digital society. UPI has built on the Immediate Payment Service(IMPS) platform. (Source: <a href="https://en.wikipedia.org/wiki/Unified_Payments_Interface">Wikipedia <i class="fa fa-external-link"></i></a>)</p>
 
-	</div>
+
+				</div>
+				<div class="one-half column">
+					<h2>Features</h2>
+					<ul>
+						<li>No need to share your bank account number</li>
+						<li>Instant transfer of money across bank accounts</li>
+						<li>Create email like payment addresses</li>
+						<li>QR Code based payments</li>
+						<li>Send / Receive money <strong>to your bank account</strong></li>
+					</ul>
+				</div>
+			</div>
+			<center><div id="sharesocial"/></center>
+			<p class="copyright">#CashlessConsumer Initiative</p>
+		</div> <!-- end .container -->
+	</article>
 
 <!-- End Document
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
