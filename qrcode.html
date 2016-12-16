@@ -1,169 +1,184 @@
 <!DOCTYPE html>
-<html class="no-js">
-	<head>
-		<meta charset="utf-8">
-		<title>UPI QRCode Generator</title>
-		<meta name="description" content="">
-		<meta name="HandheldFriendly" content="True">
-		<meta name="MobileOptimized" content="320">
-		<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-		<meta http-equiv="cleartype" content="on">
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>UPI QR Code Generator | #CashlessConsumer</title>
+	<meta name="description" content="Get QR Code for your Virtual Payment Address (VPA) for instant UPI transfer.">
+	<meta name="author" content="Srikanth L">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/touch/apple-touch-icon-144x144-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/touch/apple-touch-icon-114x114-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/touch/apple-touch-icon-72x72-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" href="img/touch/apple-touch-icon-57x57-precomposed.png">
-		<link rel="shortcut icon" sizes="196x196" href="img/touch/touch-icon-196x196.png">
-		<link rel="shortcut icon" href="img/touch/apple-touch-icon.png">
-		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"/>
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/touch/apple-touch-icon-144x144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/touch/apple-touch-icon-114x114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/touch/apple-touch-icon-72x72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="img/touch/apple-touch-icon-57x57-precomposed.png">
+	<link rel="shortcut icon" sizes="196x196" href="img/touch/touch-icon-196x196.png">
+	<link rel="shortcut icon" href="img/touch/apple-touch-icon.png">
+	<meta name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png">
+	<meta name="msapplication-TileColor" content="#222222">
+	
+	<!-- FONT –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"/>
+	<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" integrity="sha384-Wrgq82RsEean5tP3NK3zWAemiNEXofJsTwTyHmNb/iL3dP/sZJ4+7sOld1uqYJtE" crossorigin="anonymous">
 
-		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.jssocials/1.3.1/jssocials.css" />
-		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.jssocials/1.3.1/jssocials-theme-flat.css" />
+	<!-- CSS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+	<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.3.1/jssocials.css" />
+	<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.3.1/jssocials-theme-flat.css" />
 
+	<!-- Favicon –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="icon" type="image/png" href="images/favicon.png">
 
-		<!-- Tile icon for Win8 (144x144 + tile color) -->
-		<meta name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png">
-		<meta name="msapplication-TileColor" content="#222222">
-
-		<!-- SEO: If mobile URL is different from desktop URL, add a canonical link to the desktop page -->
-		<!--
-		<link rel="canonical" href="http://www.example.com/" >
-		-->
-
-		<!-- Add to homescreen for Chrome on Android -->
-		<!--
-		<meta name="mobile-web-app-capable" content="yes">
-		-->
-
-		<!-- This script prevents links from opening in Mobile Safari. https://gist.github.com/1042026 -->
-		<!--
-		<script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>
-		-->
-
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/skeleton.css">
-		<!--<link rel="stylesheet" href="css/main.css">-->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-	</head>
-	<body>
-
-		<!-- Add your site or application content here -->
-
-		<div class="container">
-		<div class="row">
-			<h2>Unified Payments Interface QRCode Generator</h2>
-		</div>
-		<div class="row">
-			<div class="two columns"><a href="./index.html">Home</a></div>
-			<div class="two columns"><a href="./upi-setup.html">UPI Setup</a></div>
-			<div class="two columns"><a href="./applist.html">UPI Apps </a></div>
-			<div class="two columns"><a href="./about.html">FAQ</a></div>
-			<div class="two columns"><a href="./askus.html">Ask us</a></div>
-		</div>
-		<br/>
-		<div class="intro">
-		<p> Generate <a href="http://en.wikipedia.org/wiki/Unified_Payment_Interface">UPI</a> QRCode (Quick Response Code) to let others pay scanning your QRCode. Enter your name and your VPA to get a QRCode. Click the QRCode image below to generate QRCode of your VPA.  When QR Code is scanned on a mobile with UPI app, it opens the payment screen directly.</p>
-		<p> No information you enter is collected / transmitted / stored. QRCode is generated by your browser. </p>
-		</div>
-		<div class="inputs">
-			<div class="row">
-				<div class="six columns">
-      					<label for="pn">Payee Name</label>
-  					<input type="text" id="pn" value="Srikanth" class="u-full-width">
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#cc-navbar-collapse" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="index.html" class="navbar-brand">#CashlessConsumer</a>
 				</div>
-				<div class="six columns">
-  					<label for="pa">Payee VPA</label>
-					<input type="text" id="pa" value="logic">
-					@
-					<input type="text" id="psp" list="psplist" value="axisbank">
+				<div class="collapse navbar-collapse"  id="cc-navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="./index.html">Home</a></li>
+						<li><a href="./upi-setup.html">How to Install</a></li>
+						<li><a href="./applist.html">UPI Apps</a></li>
+						<li class="active"><a href="./qrcode.html">Get QR Code</a></li>
+						<li><a href="./about.html">FAQ</a></li>
+						<li><a href="./askus.html">Ask Us</a></li>
+					</ul>
 				</div>
-				<datalist id="psplist">
-					<option value="allbank">
-					</option><option value="andb">
-					</option><option value="axisbank">
-					</option><option value="barodampay">
-					</option><option value="cnrb">
-					</option><option value="csbpay">
-					</option><option value="dcb">
-					</option><option value="federal">
-					</option><option value="hdfcbank">
-					</option><option value="icici">
-					</option><option value="idfcbank">
-					</option><option value="indus">
-					</option><option value="kaypay">
-					</option><option value="kbl">
-					</option><option value="mahab">
-					</option><option value="obc">
-					</option><option value="pnb">
-					</option><option value="pockets">
-					</option><option value="sib">
-					</option><option value="sbi">
-					</option><option value="tjsb">
-					</option><option value="ubi">
-					</option><option value="uboi">
-					</option><option value="uco">
-					</option><option value="utbi">
-					</option><option value="united">
-					</option><option value="unionbank">
-					</option><option value="ybl">
-					</option><option value="yesbank">
-					</option>
-				</datalist>
 			</div>
-			<br/>
-			<br/>
-			<center>
+		</nav>
+	</header>
+	<article>
+		<div class="title-banner">
+			<div class="container">
 				<div class="row">
-					<!--<a onclick="getLink()"><img src="img/Link-48.png" alt="Get Link" title="Get Link"></a>-->
-					<a onclick="generatePhoneQRCode()"><img src="img/QR%20Code-48.png" alt="Get QRCode" title="Get QRCode"/></a>
-					<a hidden="true" id="HTMLSnippet"></a>
-					<a hidden="true" id="DownloadQRCode" onclick="downloadQRCode()"><img src="img/Download-48.png" alt="Download QRCode" title="Download QRCode"/></a>
-					<a hidden="true" id="PrintQRCode" onclick="printQRCode()"><img src="img/Print-48.png" alt="Print QRCode" title="Print QRCode"/></a>
+					<div class="col-md-12">
+						<h1>Create Your UPI QRCode</h1>
+					</div>
 				</div>
-			<br/>
-			<br/>
-			</center>
-		</div>
-		<center>
-			<div id="printableArea" class="printableArea">
-				<div id="payQRCode"></div>
-				<div id="printVPA"></div>
-				<img src="img/UPILogo.jpg" id="upifulllogo" width="20%" height="30%" hidden="true"/>
-				<br/>
 			</div>
-			<div id="paylink"></div>
-			<br/>
-			<textarea id="htmllink" class="htmllink" hidden="true"></textarea>
-
-			<div class="footer">
-				<div id="shareIcons"></div>
-				<a href="https://github.com/srikanthlogic/CashlessConsumer">Code</a>
-			</div>
-
-		</center>
-
 		</div>
-		<img src="img/UPILogo.jpg" id="upilogo" hidden="true"/>
-		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-		<script async="async" type="text/javascript" src="https://cdn.jsdelivr.net/jquery.jssocials/1.3.1/jssocials.min.js"></script>
-		<!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>-->
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lrsjng.jquery-qrcode/0.14.0/jquery-qrcode.min.js"></script>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2014-11-29/FileSaver.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
-		<script src="js/helper.js"></script>
-		<script src="js/main.js"></script>
-		<script>
+		<div class="container content">
+			<div class="row">
+				<div class="col-md-12">
+
+					<div class="intro">
+						<h2>Help your friends pay you with ease.</h2>
+						<p>To create your <abbr title="Unified Payment Interface">UPI</abbr> QRCode (Quick Response Code), enter your Name and your VPA.</p>
+						<p>When your friends want to pay you, just show your newly created QRCode and let them scan it with UPI app on their mobile phone. Your payment information will be auto loaded in their phone. All they have to do is, enter amount and you'll get your money in a click.</p>
+						<div class="alert alert-info">
+							<strong>Your privacy is important</strong>: This QRCode Generator creates your QRCode within your browser. We do not collect, transmit or store any information you enter below.
+						</div>
+						
+					</div>
+					<div class="inputs">
+						<div class="row">
+							<div class="col-md-6">
+								<form>
+									<div class="form-group">
+										<label for="pn">Enter your name</label>
+										<div class="input-group">
+											<input class="form-control" id="pn" placeholder="Your name" value="Srikanth"/>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="pa">Enter your VPA</label>
+										<div class="input-group">
+											<input class="form-control" id="pa" aria-label="Your VPA identifier" placeholder="Your VPA identifier" value="logic"/>
+											<span class="input-group-addon">@</span>
+											<input class="form-control" id="psp" list="psplist" aria-label="Your VPA handle" placeholder="Your VPA handle" value="axisbank"/> 
+										</div>
+									</div>
+									<datalist id="psplist">
+										<option value="allbank">
+										</option><option value="andb">
+										</option><option value="axisbank">
+										</option><option value="barodampay">
+										</option><option value="cnrb">
+										</option><option value="csbpay">
+										</option><option value="dcb">
+										</option><option value="federal">
+										</option><option value="hdfcbank">
+										</option><option value="icici">
+										</option><option value="idfcbank">
+										</option><option value="indus">
+										</option><option value="kaypay">
+										</option><option value="kbl">
+										</option><option value="mahab">
+										</option><option value="pnb">
+										</option><option value="pockets">
+										</option><option value="sib">
+										</option><option value="sbi">
+										</option><option value="tjsb">
+										</option><option value="ubi">
+										</option><option value="uboi">
+										</option><option value="uco">
+										</option><option value="utbi">
+										</option><option value="united">
+										</option><option value="unionbank">
+										</option><option value="ybl">
+										</option><option value="yesbank">
+										</option>
+									</datalist>
+									<a class="btn btn-primary" onclick="generatePhoneQRCode()"><i class="fa fa-qrcode"></i> Create QRCode</a>
+								</form>
+							</div>
+							<div class="col-md-3">
+								<div id="printableArea" class="printableArea">
+									<div id="payQRCode"></div>
+									<div id="printVPA"></div>
+								</div>
+								<img src="img/UPILogo.jpg" id="upilogo" hidden="true"/>
+							</div>
+							<div class="col-md-3">
+								<p><a class="btn btn-primary" style="display:none" id="DownloadQRCode" onclick="downloadQRCode()"><i class="fa fa-download"></i> Download QRCode</a></p>
+								<p><a class="btn btn-primary" style="display:none" id="PrintQRCode" onclick="printQRCode()"><i class="fa fa-print"></i> Print QRCode</a></p>
+								<p style="display:none" id="paylink"></p>
+								<p><img src="img/UPILogo.jpg" id="upifulllogo" width="50%" height="30%" hidden="true"/></p>
+							</div>
+						</div>
+						<hr/>
+					</div>
+
+				</div>
+			</div>
+			<center><div id="sharesocial"/></center>
+		</div> <!-- end .container -->
+	</article>
+	<footer>
+		<div class="container">
+			<p class="copyright">#CashlessConsumer Initiative</p>
+		</div>
+	</footer>
+<!-- End Document –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.jssocials/1.3.1/jssocials.min.js"></script>
+	<script>
 		$("#sharesocial").jsSocials({
 			url: "https://srikanthlogic.github.io/CashlessConsumer/qrcode.html",
-			text: "Generate your #UPI QRCode now",
+			text: "Create your #UPI QRCode now",
 			showCount: "inside",
 			showLabel: false,
 			shareIn: "popup",
 			shares: ["email", "twitter", "facebook", "whatsapp", "googleplus"]
-	  });
-
+		});
 	</script>
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lrsjng.jquery-qrcode/0.14.0/jquery-qrcode.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2014-11-29/FileSaver.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+	<script src="js/helper.js"></script>
+	<script src="js/main.js"></script>
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
