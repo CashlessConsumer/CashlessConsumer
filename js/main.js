@@ -5,11 +5,11 @@ function getLink() {
 			"&tn=" + $('#tn').val() +
 			"&am=" + $('#am').val();
 	if ($('#am').val() !== '') {
-		$('#paylink').html("<a href=" + encodeURI(paymentStr) + ">Pay " + $('#pn').val() + " using UPI</a>");
+		$('#paylink').html("<a class=\"btn btn-primary\" href=\"" + encodeURI(paymentStr) + "\"><i class='fa fa-money'></i> Pay " + $('#pn').val() + " using UPI</a>");
 	} else {
-		$('#paylink').html("<a href=" + encodeURI(paymentStr) + ">Pay ₹" + $('#am').val() + " to " + $('#pn').val() + " using UPI</a>");
+		$('#paylink').html("<a class=\"btn btn-primary\" href=\"" + encodeURI(paymentStr) + "\"><i class='fa fa-money'></i> Pay ₹" + $('#am').val() + " to " + $('#pn').val() + " using UPI</a>");
 	}
-	$('#HTMLSnippet').show();
+	$('#paylink').show();
 	return paymentStr;
 }
 
@@ -77,24 +77,6 @@ function downloadQRCode() {
 function printQRCode() {
 	window.print();
 }
-
-$(window).load(function () {
-	 $("#shareIcons").jsSocials({
-		url: "https://srikanthlogic.github.io/CashlessConsumer/linkgen.html",
-		text: "UPI QRCode Generator",
-		showCount: true,
-		showLabel: false,
-		showCount: "inside",
-		shares: [
-			"email",
-			{ share: "twitter", via: "logic", hashtags: "#CashlessConsumer" },
-			"facebook",
-			"googleplus",
-			"linkedin",
-			"whatsapp"
-		]
-	});
-});
 
 /* TODO -- Find a way to send to WA. Custom URL Scheme sends as text
 function shareWA() {
