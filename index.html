@@ -1,91 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-	<!-- Basic Page Needs
-	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<meta charset="utf-8">
 	<title>Understanding Unified Payments Interface - #CashlessConsumer</title>
 	<meta name="description" content="Unified Payments Interface - #CashlessConsumer initiative ">
 	<meta name="author" content="Srikanth L">
-
-	<!-- Mobile Specific Metas
-	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- FONT
-	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"/>
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/touch/apple-touch-icon-144x144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/touch/apple-touch-icon-114x114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/touch/apple-touch-icon-72x72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="img/touch/apple-touch-icon-57x57-precomposed.png">
+	<link rel="shortcut icon" sizes="196x196" href="img/touch/touch-icon-196x196.png">
+	<link rel="shortcut icon" href="img/touch/apple-touch-icon.png">
+	<meta name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png">
+	<meta name="msapplication-TileColor" content="#222222">
 
-	<!-- CSS
-	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<link rel="stylesheet" href="css/normalize.css"/>
-	<link rel="stylesheet" href="css/skeleton.css"/>
-	<link rel="stylesheet" href="css/style.css"/>
+	<!-- FONT –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"/>
 	<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" integrity="sha384-Wrgq82RsEean5tP3NK3zWAemiNEXofJsTwTyHmNb/iL3dP/sZJ4+7sOld1uqYJtE" crossorigin="anonymous">
+
+	<!-- CSS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
 	<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.3.1/jssocials.css" />
 	<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.3.1/jssocials-theme-flat.css" />
 
-	<!-- JS
-	-------------------------------------------------- -->
-
-
-	<!-- Favicon
-	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<!-- Favicon –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<link rel="icon" type="image/png" href="images/favicon.png">
 
 </head>
 <body>
-
 	<header>
-		<div class="container">
-			<div class="row">
-				<ul class="nav">
-					<li class="active"><a href="./index.html">Home</a></li>
-					<li><a href="./upi-setup.html">How to Install</a></li>
-					<li><a href="./applist.html">UPI Apps</a></li>
-					<li><a href="./qrcode.html">Get QR Code</a></li>
-					<li><a href="./about.html">FAQ</a></li>
-					<li><a href="./askus.html">Ask Us</a></li>
-				</ul>
-				<div id="logo"><a href="index.html">#CashlessConsumer</a></div>
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#cc-navbar-collapse" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="index.html" class="navbar-brand">#CashlessConsumer</a>
+				</div>
+				<div class="collapse navbar-collapse"  id="cc-navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="./index.html">Home</a></li>
+						<li><a href="./upi-setup.html">How to Install</a></li>
+						<li><a href="./applist.html">UPI Apps</a></li>
+						<li><a href="./qrcode.html">Get QR Code</a></li>
+						<li><a href="./about.html">FAQ</a></li>
+						<li><a href="./askus.html">Ask Us</a></li>
+					</ul>
+				</div>
 			</div>
-		</div>
+		</nav>
 	</header>
 	<article>
-		<div class="row">
-			<div class="jumbotron">
-				<div class="container">
-					<h1>Understanding UPI</h1>
+		<div class="title-banner">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>Understanding UPI</h1>
+					</div>
 				</div>
 			</div>
 		</div>
 		<div class="container content">
 			<div class="row">
-				<div class="one-half column">
+				<div class="col-md-7">
 					<h2>Unified Payments Interface</h2>
-						<p>Unified Payments Interface (UPI) is a system that powers multiple bank accounts (of participating banks), several banking services features like fund transfer (P2P), and merchant payments in a single mobile application. UPI was launched by <a href="http://www.npci.org.in/">National Payments Corporation of India <i class="fa fa-external-link"></i></a> (a not for profit run by coalition of banks) with Reserve Bank of India's (RBI) vision of migrating towards a 'less-cash' and more digital society. UPI has built on the Immediate Payment Service(IMPS) platform. (Source: <a href="https://en.wikipedia.org/wiki/Unified_Payments_Interface">Wikipedia <i class="fa fa-external-link"></i></a>)</p>
+						<p><strong>Unified Payments Interface (UPI)</strong> is a system that powers multiple bank accounts (of participating banks), several banking services features like fund transfer (<abbr title="Peer to Peer">P2P</abbr>), and merchant payments in a single mobile application. UPI was launched by <a href="http://www.npci.org.in/">National Payments Corporation of India <i class="fa fa-external-link"></i></a> (a not for profit run by coalition of banks) with Reserve Bank of India's (RBI) vision of migrating towards a 'less-cash' and more digital society. UPI has built on the Immediate Payment Service (IMPS) platform.</p>
+						
+						<p class="text-right">(Source: <a href="https://en.wikipedia.org/wiki/Unified_Payments_Interface">Wikipedia <i class="fa fa-external-link"></i></a>)</p>
+
+
 				</div>
-				<div class="one-half column">
+				<div class="col-md-5">
 					<h2>Features</h2>
 					<ul>
 						<li>No need to share your bank account number</li>
+						<li>No need to share your IFSC</li>
 						<li>Instant transfer of money across bank accounts</li>
-						<li>Create email like payment addresses</li>
-						<li>QR Code based payments</li>
-						<li>Send / Receive money <strong>to your bank account</strong></li>
+						<li>Use payment addresses that look like email address</li>
+						<li>Send money <strong>from your bank account</strong></li>
+						<li>Receive money <strong>to your bank account</strong></li>
+						<li>QR Code based payments <br/><p><a href="qrcode.html" class="btn btn-primary btn-sm" title="Get your QR Code"><i class="fa fa-qrcode"></i> Get my QR Code</a></p></li>
 					</ul>
 				</div>
 			</div>
 			<center><div id="sharesocial"/></center>
-			<p class="copyright">#CashlessConsumer Initiative</p>
+			
 		</div> <!-- end .container -->
 	</article>
-
-<!-- End Document
-	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<footer>
+		<div class="container">
+			<p class="copyright">#CashlessConsumer Initiative</p>
+		</div>
+	</footer>
+<!-- End Document –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.jssocials/1.3.1/jssocials.min.js"></script>
 	<script>
 		$("#sharesocial").jsSocials({
