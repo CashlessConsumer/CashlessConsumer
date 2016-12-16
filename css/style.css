@@ -1,0 +1,125 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html, body {
+	background-color: #fff;
+	color: #444;
+	font-family: "Lato", Arial, sans-serif;
+	font-size: 18px;
+	margin: 0;
+}
+
+/* header styles */
+header{
+	border-top: 3px solid #ff6633;
+	padding: 30px 0 25px;
+}
+header #logo{
+	margin: 2px 0 0;
+	display: inline-block;
+	font-family: "Lato", Arial, sans-serif;
+	font-size: 24px;
+	line-height: 1.6;
+}
+header #logo a{
+	color: #444;
+	text-decoration: none;
+}
+header ul.nav {
+	float: right;
+	margin: 2px 0 0;
+	padding: 0;
+}
+
+header ul.nav>li {
+	display: inline-block;
+	margin-left: 20px;
+	font-size: 13px;
+	font-weight: bold;
+	list-style-type: none;
+}
+
+header ul.nav>li a {
+	color: #999;
+	text-decoration: none;
+}
+header ul.nav>li.active a {
+	color: #333;
+}
+header ul.nav>li a:hover {
+	color: #333;
+}
+
+/* article styles */
+article{
+	font-size: 15px;
+    line-height: 1.7;
+    overflow: hidden;
+}
+
+.content > *:first-child {
+    margin-top: 0 !important;
+}
+article p, article blockquote, article ul, article ol, article dl, article table, article pre {
+    margin: 15px 0;
+}
+
+article .jumbotron{
+	background: url(../img/bg.svg);
+	background-repeat: repeat;
+}
+
+article h1, article h2, article h3, article h4, article h5, article h6 {
+    color: #000;
+	margin: 1em 0 15px;
+    padding: 0;
+    font-weight: bold;
+    line-height: 1.7;
+    cursor: text;
+    position: relative;
+	letter-spacing: normal;
+}
+
+article h1 {
+	color: #fff;
+    letter-spacing: -1px;
+    line-height: 1;
+	margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 48px;
+    font-weight: normal;
+	padding: 50px 0;
+	text-shadow: 0 2px 0 rgba(0, 0, 0, .15);
+}
+
+article h2 {
+    font-size: 2em;
+    border-bottom: 1px solid #eee;
+}
+
+
+article ul, article ol {
+	margin: 15px 0;
+    padding-left: 30px;
+}
+article ul{
+	list-style-type: disc;
+}
+
+article li{
+	display: list-item;
+	margin-bottom: 0.5rem;
+}
+
+content > *:last-child {
+    margin-bottom: 0 !important;
+}
+
+.copyright {
+    padding-top: 30px;
+    font-size: 14px;
+    color: #999;
+}
