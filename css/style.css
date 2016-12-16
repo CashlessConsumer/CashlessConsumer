@@ -68,7 +68,7 @@ article p, article blockquote, article ul, article ol, article dl, article table
 }
 
 article .jumbotron{
-	background: url(../img/bg.svg);
+	background: #27642f;
 	background-repeat: repeat;
 }
 
@@ -85,12 +85,12 @@ article h1, article h2, article h3, article h4, article h5, article h6 {
 
 article h1 {
 	color: #fff;
-    letter-spacing: -1px;
-    line-height: 1;
-	margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 48px;
-    font-weight: normal;
+	letter-spacing: -1px;
+	line-height: 1;
+	margin-top: 10px;	
+	margin-bottom: 10px;
+	font-size: 36px;
+	font-weight: normal;
 	padding: 50px 0;
 	text-shadow: 0 2px 0 rgba(0, 0, 0, .15);
 }
