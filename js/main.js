@@ -84,3 +84,33 @@ function shareWA() {
 	var whatsapp_url = "whatsapp://send?html=" + message;
 	window.location.href = whatsapp_url;
 } */
+
+
+function postToGoogle() {
+	var upiquestion = $('#upiquestion').val();
+	var upiemail = $('#upiemail').val();
+	
+	if(upiquestion == ""){
+		$('#upiresponse').html("<div class='alert alert-danger'>Don't you want to ask anything? Please enter your question.</div>");
+	} else {
+		$.ajax({
+			url: "https://docs.google.com/forms/d/e/1FAIpQLSfMSIpXd6-_pPXLEssRhXvT8P2ZHab6s8RQRDaquvpAiVAOpg/formResponse",
+			data: {"entry.998474377": upiquestion,"entry.1996686773": upiemail},
+			type: "POST",
+			dataType: "xml",
+			statusCode: {
+				0: function() {
+					$('#upiresponse').html("<div class='alert alert-success'>Your question is sent. We will get back soon.</div>");
+					$('#upiquestion').val("");
+					$('#upiemail').val("");
+				},
+				200: function() {
+					$('#upiresponse').html("<div class='alert alert-success'>Your question is sent. We will get back soon.</div>");
+					$('#upiquestion').val("");
+					$('#upiemail').val("");
+				}
+			}
+		});
+	}
+
+}
