@@ -22,5 +22,6 @@
 	"upiqrc-btn-pay-am": "UPI ಬಳಸಿಕೊಂಡು $1 ರಿಗೆ ₹ $2 ಅನ್ನು ಪಾವತಿಸಿ",
 	"upiqrc-footer" : "#CashlessConsumer Initiative. Licensed under",
 	"upiqrc-license" : "CC-BY-SA 4.0",
-	"upiqrc-codelink" : "Code"
+	"upiqrc-codelink" : "Code",
+	"upiqrc-tweet" : "Create your #UPI QRCode now"
 }

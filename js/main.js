@@ -69,7 +69,7 @@ function copyHTMLSnippet() {
 }
 
 function downloadQRCode() {
-	html2canvas($("#payQRCode"), {
+	html2canvas($("#printableArea"), {
 		onrendered: function (canvas) {
 			canvas.toBlob(function (blob) {
 				saveAs(blob, "QRCode.png");
