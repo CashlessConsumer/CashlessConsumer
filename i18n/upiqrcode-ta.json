@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Srikanth"
+		],
+		"last-updated": "2016-12-14",
+		"locale": "ta",
+		"message-documentation": "qqq",
+		"AnotherMetadata": "AnotherMedatadataValue"
+	},
+		"upiqrc-title": "உங்கள் QRCode உருவாக்குங்கள்",
+		"upiqrc-sub-title": "நண்பர்களுக்கு எளிமையான கொடுக்கல் வசதி தந்து உதவுங்கள்",
+		"upiqrc-p-1" : "To create your UPI QRCode (Quick Response Code), enter your Name and your VPA.",
+		"upiqrc-p-2" : "When your friends want to pay you, just show your newly created QRCode and let them scan it with UPI app on their mobile phone. Your payment information will be auto loaded in their phone. All they have to do is, enter amount and you'll get your money in a click.",
+		"upiqrc-p-privacyheader" : "Your privacy is important: ",
+		"upiqrc-p-privacydesc" : "This QRCode Generator creates your QRCode within your browser. We do not collect, transmit or store any information you enter below.",
+		"upiqrc-lbl-name" : "உங்கள் பெயர்",
+		"upiqrc-lbl-vpa" : "உங்கள் கொடுத்தல் முகவரி",
+		"upiqrc-btn-create" : "QRCode உருவாக்கு",
+		"upiqrc-btn-download" : "QRCode பதிவிறக்கு",
+		"upiqrc-btn-print" : "QRCode அச்சிடு",
+		"upiqrc-btn-pay" : "UPI மூலம் பணமனுப்ப"
+}
