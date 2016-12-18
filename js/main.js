@@ -89,12 +89,11 @@ function updateText() {
 	'use strict';
 	$.i18n.debug = true;
 	var i18n = $.i18n();
-	console.log($('#lang').val());
 	var language = $('#lang').val();
-	//$.i18n( { locale:  $('#lang').val()} );
 	$.i18n().locale = $('#lang').val();
 	console.log($.i18n().locale);
-	$( '#upiqrc-title' ).i18nText( 'upiqrc-title' );
+
+	$('[data-i18n = upiqrc-title]' ).i18nText( 'upiqrc-title' );
 	$('[data-i18n = upiqrc-sub-title]' ).i18nText( 'upiqrc-sub-title' );
 	$('[data-i18n = upiqrc-p-1]' ).i18nText( 'upiqrc-p-1' );
 	$('[data-i18n = upiqrc-p-2]' ).i18nText( 'upiqrc-p-2' );
@@ -107,8 +106,6 @@ function updateText() {
 	$('[data-i18n = upiqrc-btn-print]' ).i18nText( 'upiqrc-btn-print' );
 	$('[data-i18n = upiqrc-btn-pay]' ).i18nText( 'upiqrc-btn-pay' );
 
-	//$('#upiqrc-title').val($.i18n('upiqrc-title'));
-	//console.log($.i18n('upiqrc-title'));
 }
 
 $.fn.i18nText = function ( key, params ) {
@@ -122,13 +119,10 @@ $.fn.i18nText = function ( key, params ) {
 		}*/
 		else {
 			$element.text( $.i18n( key, params ) );
-
 		}
 	} );
 	return $element;
 }
-
-
 
 $( document ).ready( function( $ ) {
 	'use strict';
