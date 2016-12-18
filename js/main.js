@@ -7,9 +7,11 @@ function getLink() {
 	if ($('#am').val() !== '') {
 		$('#paylink').find("span").html("Pay " + $('#pn').val() + " using UPI");
 		$('#paylink').find("a").attr("href", encodeURI(paymentStr));
+		$('[data-i18n = upiqrc-btn-pay]' ).i18nText( 'upiqrc-btn-pay', $('#pn').val() );
 	} else {
 		$('#paylink').find("span").html("Pay ₹" + $('#am').val() + " to " + $('#pn').val() + " using UPI");
 		$('#paylink').find("a").attr("href", encodeURI(paymentStr));
+		$('[data-i18n = upiqrc-btn-pay]' ).i18nText( 'upiqrc-btn-pay-am', $('#pn').val(), $('#am').val() );
 	}
 	$('#paylink').show();
 	return paymentStr;
