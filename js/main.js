@@ -139,6 +139,9 @@ function updateText() {
 		$('[data-i18n = upiqrc-btn-download]' ).text($.i18n( 'upiqrc-btn-download' ));
 		$('[data-i18n = upiqrc-btn-print]' ).text($.i18n( 'upiqrc-btn-print' ));
 		$('[data-i18n = upiqrc-btn-pay]' ).text($.i18n( 'upiqrc-btn-pay', $('#pn').val() ));
+		$('[data-i18n = upiqrc-footer]' ).text($.i18n( 'upiqrc-footer' ));
+		$('[data-i18n = upiqrc-license]' ).text($.i18n( 'upiqrc-license' ));
+		$('[data-i18n = upiqrc-codelink]' ).text($.i18n( 'upiqrc-codelink' ));
 	});
 
 }

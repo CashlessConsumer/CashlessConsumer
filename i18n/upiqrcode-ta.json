@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Srikanth"
+			"ஸ்ரீகாந்த்"
 		],
-		"last-updated": "2016-12-14",
+		"last-updated": "2016-12-19",
 		"locale": "ta",
 		"message-documentation": "qqq"
 	},
@@ -18,6 +18,9 @@
 		"upiqrc-btn-create" : "விரைவு வரிக்குறியீட்டை உருவாக்கு",
 		"upiqrc-btn-download" : "விரைவு வரிக்குறியீட்டை பதிவிறக்கு",
 		"upiqrc-btn-print" : "விரைவு வரிக்குறியீட்டை அச்சிடு",
-		"upiqrc-btn-pay" : "UPI மூலம் $1 பணமனுப்பு",
-		"upiqrc-btn-pay-am" : "UPI மூலம் $1 ₹ $2 பணமனுப்பு"
+		"upiqrc-btn-pay" : "UPI மூலம் $1 -ற்கு பணமனுப்பு",
+		"upiqrc-btn-pay-am" : "UPI மூலம் $1 -ற்கு ₹ $2 பணமனுப்பு",
+		"upiqrc-footer" : "#CashlessConsumer முன்னெடுப்பு. உரிமம் :",
+		"upiqrc-license" : "படைப்பாக்க பொதுமங்கள்-குறிப்பிடு-ஒத்தபகிர் 4.0",
+		"upiqrc-codelink" : "நிரல்"
 }

@@ -3,10 +3,9 @@
 		"authors": [
 			"Srikanth"
 		],
-		"last-updated": "2016-12-14",
+		"last-updated": "2016-12-19",
 		"locale": "en",
 		"message-documentation": "qqq",
-		"AnotherMetadata": "AnotherMedatadataValue"
 	},
 		"upiqrc-title": "Create Your UPI QRCode",
 		"upiqrc-sub-title": "Help your friends pay you with ease.",
@@ -20,5 +19,8 @@
 		"upiqrc-btn-download" : "Download QRCode",
 		"upiqrc-btn-print" : "Print QRCode",
 		"upiqrc-btn-pay" : "Pay $1 using UPI",
-		"upiqrc-btn-pay-am" : "Pay ₹ $2 to $1 using UPI"
+		"upiqrc-btn-pay-am" : "Pay ₹ $2 to $1 using UPI",
+		"upiqrc-footer" : "#CashlessConsumer Initiative. Licensed under",
+		"upiqrc-license" : "CC-BY-SA 4.0",
+		"upiqrc-codelink" : "Code"
 }
