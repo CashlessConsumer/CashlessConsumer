@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Srikanth"
+		],
+		"last-updated": "2016-12-14",
+		"locale": "en",
+		"message-documentation": "qqq",
+		"AnotherMetadata": "AnotherMedatadataValue"
+	},
+		"upiqrc-title": "Create Your UPI QRCode",
+		"upiqrc-sub-title": "Help your friends pay you with ease.",
+		"upiqrc-p-1" : "To create your UPI QRCode (Quick Response Code), enter your Name and your VPA.",
+		"upiqrc-p-2" : "When your friends want to pay you, just show your newly created QRCode and let them scan it with UPI app on their mobile phone. Your payment information will be auto loaded in their phone. All they have to do is, enter amount and you will get your money in a click.",
+		"upiqrc-p-privacyheader" : "Your privacy is important: ",
+		"upiqrc-p-privacydesc" : "This QRCode Generator creates your QRCode within your browser. We do not collect, transmit or store any information you enter below.",
+		"upiqrc-lbl-name" : "Enter your name",
+		"upiqrc-lbl-vpa" : "Enter your VPA",
+		"upiqrc-btn-create" : "Create QRCode",
+		"upiqrc-btn-download" : "Download QRCode",
+		"upiqrc-btn-print" : "Print QRCode",
+		"upiqrc-btn-pay" : "Pay using UPI"
+}
