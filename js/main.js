@@ -135,7 +135,7 @@ function updateText() {
 	$('[data-i18n = upiqrc-btn-create]' ).i18nText( 'upiqrc-btn-create' );
 	$('[data-i18n = upiqrc-btn-download]' ).i18nText( 'upiqrc-btn-download' );
 	$('[data-i18n = upiqrc-btn-print]' ).i18nText( 'upiqrc-btn-print' );
-	$('[data-i18n = upiqrc-btn-pay]' ).i18nText( 'upiqrc-btn-pay' );
+	$('[data-i18n = upiqrc-btn-pay]' ).i18nText( 'upiqrc-btn-pay', $('#pn').val() );
 
 }
 
