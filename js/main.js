@@ -5,9 +5,11 @@ function getLink() {
 			"&tn=" + $('#tn').val() +
 			"&am=" + $('#am').val();
 	if ($('#am').val() !== '') {
-		$('#paylink').html("<a class=\"btn btn-primary\" href=\"" + encodeURI(paymentStr) + "\"><i class='fa fa-money'></i> Pay " + $('#pn').val() + " using UPI</a>");
+		$('#paylink').find("span").html("Pay " + $('#pn').val() + " using UPI");
+		$('#paylink').find("a").attr("href", encodeURI(paymentStr));
 	} else {
-		$('#paylink').html("<a class=\"btn btn-primary\" href=\"" + encodeURI(paymentStr) + "\"><i class='fa fa-money'></i> Pay ₹" + $('#am').val() + " to " + $('#pn').val() + " using UPI</a>");
+		$('#paylink').find("span").html("Pay ₹" + $('#am').val() + " to " + $('#pn').val() + " using UPI");
+		$('#paylink').find("a").attr("href", encodeURI(paymentStr));
 	}
 	$('#paylink').show();
 	return paymentStr;
