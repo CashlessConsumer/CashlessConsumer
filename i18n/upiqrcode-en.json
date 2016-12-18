@@ -19,5 +19,5 @@
 		"upiqrc-btn-create" : "Create QRCode",
 		"upiqrc-btn-download" : "Download QRCode",
 		"upiqrc-btn-print" : "Print QRCode",
-		"upiqrc-btn-pay" : "Pay using UPI"
+		"upiqrc-btn-pay" : "Pay $1 using UPI"
 }
