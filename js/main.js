@@ -115,7 +115,7 @@ function postToGoogle() {
 	}
 
 }
-=======
+
 function updateText() {
 	'use strict';
 	$.i18n.debug = true;
