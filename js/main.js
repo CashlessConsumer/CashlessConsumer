@@ -85,11 +85,10 @@ function shareWA() {
 	window.location.href = whatsapp_url;
 } */
 
-
 function postToGoogle() {
 	var upiquestion = $('#upiquestion').val();
 	var upiemail = $('#upiemail').val();
-	
+
 	if(upiquestion == ""){
 		$('#upiresponse').html("<div class='alert alert-danger'>Don't you want to ask anything? Please enter your question.</div>");
 	} else {
@@ -114,3 +113,48 @@ function postToGoogle() {
 	}
 
 }
+
+function updateText() {
+	'use strict';
+	$.i18n.debug = true;
+	var i18n = $.i18n();
+	var language = $('#lang').val();
+	$.i18n().locale = $('#lang').val();
+	console.log($.i18n().locale);
+
+	$('[data-i18n = upiqrc-title]' ).i18nText( 'upiqrc-title' );
+	$('[data-i18n = upiqrc-sub-title]' ).i18nText( 'upiqrc-sub-title' );
+	$('[data-i18n = upiqrc-p-1]' ).i18nText( 'upiqrc-p-1' );
+	$('[data-i18n = upiqrc-p-2]' ).i18nText( 'upiqrc-p-2' );
+	$('[data-i18n = upiqrc-p-privacyheader]' ).i18nText( 'upiqrc-p-privacyheader' );
+	$('[data-i18n = upiqrc-p-privacydesc]' ).i18nText( 'upiqrc-p-privacydesc' );
+	$('[data-i18n = upiqrc-lbl-name]' ).i18nText( 'upiqrc-lbl-name' );
+	$('[data-i18n = upiqrc-lbl-vpa]' ).i18nText( 'upiqrc-lbl-vpa' );
+	$('[data-i18n = upiqrc-btn-create]' ).i18nText( 'upiqrc-btn-create' );
+	$('[data-i18n = upiqrc-btn-download]' ).i18nText( 'upiqrc-btn-download' );
+	$('[data-i18n = upiqrc-btn-print]' ).i18nText( 'upiqrc-btn-print' );
+	$('[data-i18n = upiqrc-btn-pay]' ).i18nText( 'upiqrc-btn-pay' );
+
+}
+
+$.fn.i18nText = function ( key, params ) {
+	var i18n = $.i18n(),
+		$element = $( this );
+	i18n.load( 'i18n/upiqrcode-' + $.i18n().locale + '.json', $('#lang').val() ).done( function () {
+		if ( $element.data( 'i18n' ) ) {
+			$element.i18n();
+		} /*else if( $element.data('i18n','[html]'+ key)) {
+			$element.i18n().html();
+		}*/
+		else {
+			$element.text( $.i18n( key, params ) );
+		}
+	} );
+	return $element;
+}
+
+$( document ).ready( function( $ ) {
+	'use strict';
+	//updateText();
+	//$.i18n().load('upiqrcode.json','ta').done( function() { console.log('done!'); set_locale_to(url('?locale')); } );;
+} );

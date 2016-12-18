@@ -1,4 +1,4 @@
-# [CashlessConsumer] - (http://srikanthlogic.github.io/CashlessConsumer/FAQ)
+# [CashlessConsumer](http://srikanthlogic.github.io/CashlessConsumer/FAQ)
 
 ## Links
 * UPI [https://en.wikipedia.org/wiki/Unified_Payments_Interface](https://en.wikipedia.org/wiki/Unified_Payments_Interface)
@@ -7,10 +7,11 @@
 
 ## Credits
 * HTML5 Boilerplate [https://html5boilerplate.com/mobile](https://html5boilerplate.com/mobile)
-* Jquery.QRCode [http://jeromeetienne.github.io/jquery-qrcode/](http://jeromeetienne.github.io/jquery-qrcode/)
+* Jquery.QRCode [https://github.com/lrsjng/jquery-qrcode/](https://github.com/lrsjng/jquery-qrcode/)
 * FileSaver [https://github.com/eligrey/FileSaver.js/](https://github.com/eligrey/FileSaver.js/)
 * HTML2Canvas [http://html2canvas.hertzen.com/](http://html2canvas.hertzen.com/)
 * Iconset [https://icons8.com](https://icons8.com)
+* jquery.i18n [http://github.com/wikimedia/jquery.i18n](http://github.com/wikimedia/jquery.i18n)
 
 ## [UPI-PayMeLinkGenerator](http://github.com/srikanthlogic/UPI-PayMeLinkGenerator)
 
@@ -19,7 +20,7 @@ A simple web page which generates UPI deep link and a QRCode for the deep link. 
 * Source: [https://github.com/srikanthlogic/UPI-PayMeLinkGenerator](https://github.com/srikanthlogic/UPI-PayMeLinkGenerator)
 
 ##Disclaimer
-* This page only helps in populating the values to make a payment. Please verify the details before making the payment inside the UPI app.
+* This page only provides help to raise awareness on UPI / other cashless systems. For UPI QRCode, Please verify the details before making the payment inside the UPI app.
 
 ##Privacy
 * The HTML page DOES NOT collect any payment related data entered on the page and the UPI link and QR Code is generated at the client side. It is up to the user to share this to anyone who wants to use this link and pay.

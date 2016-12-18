@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang=en>
 <head>
 	<meta charset="utf-8">
 	<title>UPI QR Code Generator | #CashlessConsumer</title>
@@ -15,7 +15,7 @@
 	<link rel="shortcut icon" href="img/touch/apple-touch-icon.png">
 	<meta name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png">
 	<meta name="msapplication-TileColor" content="#222222">
-	
+
 	<!-- FONT –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"/>
 	<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" integrity="sha384-Wrgq82RsEean5tP3NK3zWAemiNEXofJsTwTyHmNb/iL3dP/sZJ4+7sOld1uqYJtE" crossorigin="anonymous">
@@ -25,6 +25,9 @@
 	<link rel="stylesheet" href="css/style.css"/>
 	<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.3.1/jssocials.css" />
 	<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.3.1/jssocials-theme-flat.css" />
+
+	<link rel="localization" hreflang="en" href="i18n/upiqrcode-en.json" type="application/l10n+json"/>
+	<link rel="localization" hreflang="ta" href="i18n/upiqrcode-ta.json" type="application/l10n+json"/>
 
 	<!-- Favicon –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<link rel="icon" type="image/png" href="images/favicon.png">
@@ -51,6 +54,10 @@
 						<li class="active"><a href="./qrcode.html">Get QR Code</a></li>
 						<li><a href="./about.html">FAQ</a></li>
 						<li><a href="./askus.html">Ask Us</a></li>
+						<li><select id="lang" onchange="updateText()">
+					<option value="en">English</option>
+					<option value="ta">Tamil</option>
+				</select></li>
 					</ul>
 				</div>
 			</div>
@@ -61,7 +68,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<h1>Create Your UPI QRCode</h1>
+						<h1 id="upiqrc-title" data-i18n="upiqrc-title">Create Your UPI QRCode</h1>
 					</div>
 				</div>
 			</div>
@@ -71,30 +78,30 @@
 				<div class="col-md-12">
 
 					<div class="intro">
-						<h2>Help your friends pay you with ease.</h2>
-						<p>To create your <abbr title="Unified Payment Interface">UPI</abbr> QRCode (Quick Response Code), enter your Name and your VPA.</p>
-						<p>When your friends want to pay you, just show your newly created QRCode and let them scan it with UPI app on their mobile phone. Your payment information will be auto loaded in their phone. All they have to do is, enter amount and you'll get your money in a click.</p>
+						<h2 data-i18n="upiqrc-sub-title">Help your friends pay you with ease.</h2>
+						<p data-i18n="upiqrc-p-1">To create your <abbr title="Unified Payment Interface">UPI</abbr> QRCode (Quick Response Code), enter your Name and your VPA.</p>
+						<p data-i18n="upiqrc-p-2">When your friends want to pay you, just show your newly created QRCode and let them scan it with UPI app on their mobile phone. Your payment information will be auto loaded in their phone. All they have to do is, enter amount and you'll get your money in a click.</p>
 						<div class="alert alert-info">
-							<strong>Your privacy is important</strong>: This QRCode Generator creates your QRCode within your browser. We do not collect, transmit or store any information you enter below.
+							<strong data-i18n="upiqrc-p-privacyheader">Your privacy is important</strong>: <div data-i18n="upiqrc-p-privacydesc">This QRCode Generator creates your QRCode within your browser. We do not collect, transmit or store any information you enter below.</div>
 						</div>
-						
+
 					</div>
 					<div class="inputs">
 						<div class="row">
 							<div class="col-md-6">
 								<form>
 									<div class="form-group">
-										<label for="pn">Enter your name</label>
+										<label for="pn" data-i18n="upiqrc-lbl-name">Enter your name</label>
 										<div class="input-group">
 											<input class="form-control" id="pn" placeholder="Your name" value="Srikanth"/>
 										</div>
 									</div>
 									<div class="form-group">
-										<label for="pa">Enter your VPA</label>
+										<label for="pa" data-i18n="upiqrc-lbl-vpa">Enter your VPA</label>
 										<div class="input-group">
 											<input class="form-control" id="pa" aria-label="Your VPA identifier" placeholder="Your VPA identifier" value="logic"/>
 											<span class="input-group-addon">@</span>
-											<input class="form-control" id="psp" list="psplist" aria-label="Your VPA handle" placeholder="Your VPA handle" value="axisbank"/> 
+											<input class="form-control" id="psp" list="psplist" aria-label="Your VPA handle" placeholder="Your VPA handle" value="axisbank"/>
 										</div>
 									</div>
 									<datalist id="psplist">
@@ -113,6 +120,7 @@
 										</option><option value="kaypay">
 										</option><option value="kbl">
 										</option><option value="mahab">
+										</option><option value="obc">
 										</option><option value="pnb">
 										</option><option value="pockets">
 										</option><option value="sib">
@@ -128,7 +136,8 @@
 										</option><option value="yesbank">
 										</option>
 									</datalist>
-									<a class="btn btn-primary" onclick="generatePhoneQRCode()"><i class="fa fa-qrcode"></i> Create QRCode</a>
+									<div>
+									<a class="btn btn-primary" onclick="generatePhoneQRCode()"><i class="fa fa-qrcode"></i> <span data-i18n="upiqrc-btn-create">Create QRCode</span></a></div>
 								</form>
 							</div>
 							<div class="col-md-3">
@@ -139,9 +148,9 @@
 								<img src="img/UPILogo.jpg" id="upilogo" hidden="true"/>
 							</div>
 							<div class="col-md-3">
-								<p><a class="btn btn-primary" style="display:none" id="DownloadQRCode" onclick="downloadQRCode()"><i class="fa fa-download"></i> Download QRCode</a></p>
-								<p><a class="btn btn-primary" style="display:none" id="PrintQRCode" onclick="printQRCode()"><i class="fa fa-print"></i> Print QRCode</a></p>
-								<p style="display:none" id="paylink"></p>
+								<p><a class="btn btn-primary" data-i18n="upiqrc-btn-download" style="display:none" id="DownloadQRCode" onclick="downloadQRCode()"></a></p>
+								<p><a class="btn btn-primary" style="display:none" id="PrintQRCode" onclick="printQRCode()"><i class="fa fa-print"></i> <span data-i18n="upiqrc-btn-print">Print QRCode</span></a></p>
+								<p style="display:none" id="paylink"><span data-i18n="upiqrc-btn-pay"></span></p>
 								<p><img src="img/UPILogo.jpg" id="upifulllogo" width="50%" height="30%" hidden="true"/></p>
 							</div>
 						</div>
@@ -174,9 +183,18 @@
 	</script>
 
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lrsjng.jquery-qrcode/0.14.0/jquery-qrcode.min.js"></script>
+
+	<script src="./src/jquery.i18n.js"></script>
+	<script src="./src/jquery.i18n.messagestore.js"></script>
+	<script src="./src/jquery.i18n.fallbacks.js"></script>
+	<script src="./src/jquery.i18n.parser.js"></script>
+	<script src="./src/jquery.i18n.emitter.js"></script>
+	<script src="./src/jquery.i18n.language.js"></script>
+
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2014-11-29/FileSaver.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/js-url/2.3.1/url.min.js"></script>
 	<script src="js/helper.js"></script>
 	<script src="js/main.js"></script>
 	<script>
