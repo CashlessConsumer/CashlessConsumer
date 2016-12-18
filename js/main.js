@@ -85,8 +85,6 @@ function shareWA() {
 	window.location.href = whatsapp_url;
 } */
 
-<<<<<<< HEAD
-
 function postToGoogle() {
 	var upiquestion = $('#upiquestion').val();
 	var upiemail = $('#upiemail').val();
