@@ -1,316 +1,363 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-
-	<!-- Basic Page Needs
-	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<meta charset="utf-8">
-	<title>Unified Payments Interface apps list - #CashlessConsumer</title>
-	<meta name="description" content="Unified Payments Interface - List of apps | #CashlessConsumer ">
+	<title>List of All UPI Apps | #CashlessConsumer</title>
+	<meta name="description" content="Unified Payments Interface - #CashlessConsumer initiative ">
 	<meta name="author" content="Srikanth L">
-
-	<!-- Mobile Specific Metas
-	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- FONT
-	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/touch/apple-touch-icon-144x144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/touch/apple-touch-icon-114x114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/touch/apple-touch-icon-72x72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="img/touch/apple-touch-icon-57x57-precomposed.png">
+	<link rel="shortcut icon" sizes="196x196" href="img/touch/touch-icon-196x196.png">
+	<link rel="shortcut icon" href="img/touch/apple-touch-icon.png">
+	<meta name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png">
+	<meta name="msapplication-TileColor" content="#222222">
 
-	<!-- CSS
-	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/skeleton.css">
+	<!-- FONT –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"/>
 	<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" integrity="sha384-Wrgq82RsEean5tP3NK3zWAemiNEXofJsTwTyHmNb/iL3dP/sZJ4+7sOld1uqYJtE" crossorigin="anonymous">
+
+	<!-- CSS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
 	<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.3.1/jssocials.css" />
 	<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.3.1/jssocials-theme-flat.css" />
 
-	<!-- JS
-	-------------------------------------------------- -->
-
-
-	<!-- Favicon
-	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<!-- Favicon –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<link rel="icon" type="image/png" href="images/favicon.png">
 
 </head>
 <body>
-
-	<!-- Primary Page Layout
-	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<div class="container">
-		<div class="row">
-			<h2>Unified Payments Interface Applications</a></h2>
+	<header>
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#cc-navbar-collapse" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="index.html" class="navbar-brand">#CashlessConsumer</a>
+				</div>
+				<div class="collapse navbar-collapse"  id="cc-navbar-collapse">
+					<ul class="nav navbar-nav navbar-left">
+						<li><a href="./index.html">Home</a></li>
+						<li><a href="./upi-setup.html">How to Install</a></li>
+						<li class="active"><a href="./applist.html">UPI Apps</a></li>
+						<li><a href="./qrcode.html">Get QR Code</a></li>
+						<li><a href="./about.html">About</a></li>
+						<li><a href="./askus.html">Ask Us</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#"><select id="lang" onchange="updateText()">
+							<option value="en">English</option>
+							<option value="ta">தமிழ்</option>
+							<option value="kn">ಕನ್ನಡ</option>
+						</select></a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<article>
+		<div class="title-banner">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>UPI App List</h1>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="row">
-			<div class="two columns"><a href="./index.html" >Home</a></div>
-			<div class="two columns"><a href="./upi-setup.html">UPI Setup</a></div>
-			<div class="two columns"><a href="./qrcode.html">UPI QRCode</a></div>
-			<div class="two columns"><a href="./about.html">FAQ</a></div>
-			<div class="two columns"><a href="./askus.html">Ask us</a></div>
+		<div class="container content">
+			<div class="row">
+				<div class="col-md-12">
+
+					<p>You can download a UPI app of your choice and install. Yes, this need not be issued by your own bank. You can use any UPI app issued by any bank or company and link your bank account to it.</p>
+					<p>Currently only Android devices are supported. iOS and Windows apps coming soon.
+					<p>Confused which app to install?</p>
+					<p><a class="btn btn-primary" href="http://bit.ly/UPIApps" target="_blank">Compare all UPI Apps</a></p>
+					<p class="visible-sm-* hidden-xs">Scan QRCode to install your preferred android app.</p>
+
+					<div class="table-responsive">
+						<table class="table table-bordered table-hover">
+							<tr>
+								<th class="col-md-2 col-sm-2 col-xs-3">Logo</th>
+								<th class="col-md-8 col-sm-8 col-xs-9">Name</th>
+								<th class="col-md-2 col-sm-2 visible-sm-* hidden-xs">Download</th>
+							</tr>
+							
+							<tr>
+								<td>
+									<img class="img-responsive" src="./img/banklogos/andhrabank.png" alt="Andhra Bank"/>
+								</td>
+								<td>
+									<a href="https://play.google.com/store/apps/details?id=com.olive.andhra.upi">Andhra Bank ONE - UPI App</a>
+								</td>
+								<td class="visible-sm-* hidden-xs">
+									<img class="img-responsive" src="http://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=UTF-8&chld=H&chl=https://play.google.com/store/apps/details?id=com.olive.andhra.upi" alt="qrcode"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img class="img-responsive" src="./img/banklogos/axisbank.jpg" width="" alt="Axis Bank"/>
+								</td>
+								<td>
+									<a href="https://play.google.com/store/apps/details?id=com.upi.axispay">AxisPay</a>
+								</td>
+								<td class="visible-sm-* hidden-xs">
+									<img class="img-responsive" src="http://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=UTF-8&chld=H&chl=https://play.google.com/store/apps/details?id=com.upi.axispay" alt="qrcode"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img class="img-responsive" src="./img/banklogos/Bank-of-Maharashtra-Logo.jpg" alt="Bank of Maharashtra"/>
+								</td>
+								<td>
+									<a href="https://play.google.com/store/apps/details?id=com.infrasofttech.mahaupi">Maha UPI</a>
+								</td>
+								<td class="visible-sm-* hidden-xs">
+									<img class="img-responsive" src="http://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=UTF-8&chld=H&chl=https://play.google.com/store/apps/details?id=com.infrasofttech.mahaupi" alt="qrcode"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img class="img-responsive" src="./img/banklogos/canara-bank-logo.jpg" alt="Canara Bank"/>
+								</td>
+								<td>
+									<a href="https://play.google.com/store/apps/details?id=upi.npst.com.upicanara">Canara Bank UPI- empower</a>
+								</td>
+								<td class="visible-sm-* hidden-xs">
+									<img class="img-responsive" src="http://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=UTF-8&chld=H&chl=https://play.google.com/store/apps/details?id=upi.npst.com.upicanara" alt="qrcode"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img class="img-responsive" src="./img/banklogos/catholic-syrian-bank.png" alt="Catholic Syrian Bank"/>
+								</td>
+								<td>
+									<a href="https://play.google.com/store/apps/details?id=com.lcode.csbupi">CSB-UPI</a>
+								</td>
+								<td class="visible-sm-* hidden-xs">
+									<img class="img-responsive" src="http://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=UTF-8&chld=H&chl=https://play.google.com/store/apps/details?id=com.lcode.csbupi" alt="qrcode"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img class="img-responsive" src="./img/banklogos/dcb-bank.jpg" alt="DCB Bank"/>
+								</td>
+								<td>
+									<a href="https://play.google.com/store/apps/details?id=com.olive.dcb.upi">DCB Bank UPI App</a>
+								</td>
+								<td class="visible-sm-* hidden-xs">
+									<img class="img-responsive" src="http://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=UTF-8&chld=H&chl=https://play.google.com/store/apps/details?id=com.olive.dcb.upi" alt="qrcode"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img class="img-responsive" src="./img/banklogos/Federallogo.gif" alt="Federal Bank"/>
+								</td>
+								<td>
+									<a href="https://play.google.com/store/apps/details?id=com.upi.federalbank.org.lotza">Lotza-UPI</a>
+								</td>
+								<td class="visible-sm-* hidden-xs">
+									<img class="img-responsive" src="http://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=UTF-8&chld=H&chl=https://play.google.com/store/apps/details?id=com.upi.federalbank.org.lotza" alt="qrcode"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img class="img-responsive" src="./img/banklogos/hdfc-bank-logo.jpg" alt="HDFC Bank"/>
+								</td>
+								<td>
+									<a href="https://play.google.com/store/apps/details?id=com.snapwork.hdfc">HDFC Bank MobileBanking</a>
+								</td>
+								<td class="visible-sm-* hidden-xs">
+									<img class="img-responsive" src="http://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=UTF-8&chld=H&chl=https://play.google.com/store/apps/details?id=com.snapwork.hdfc" alt="qrcode"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img class="img-responsive" src="./img/banklogos/icici-bank-logo.jpg" alt="ICICI Bank"/>
+								</td>
+								<td>
+									<a href="https://play.google.com/store/apps/details?id=com.csam.icici.bank.imobile">iMobile</a>
+								</td>
+								<td class="visible-sm-* hidden-xs">
+									<img class="img-responsive" src="http://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=UTF-8&chld=H&chl=https://play.google.com/store/apps/details?id=com.csam.icici.bank.imobile" alt="qrcode"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img class="img-responsive" src="./img/banklogos/Pockets-logo.jpg" alt="ICICI Pockets"/>
+								</td>
+								<td>
+									<a href="https://play.google.com/store/apps/details?id=com.icicibank.pockets">Pockets</a>
+								</td>
+								<td class="visible-sm-* hidden-xs">
+									<img class="img-responsive" src="http://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=UTF-8&chld=H&chl=https://play.google.com/store/apps/details?id=com.icicibank.pockets" alt="qrcode"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img class="img-responsive" src="./img/banklogos/karnataka-bank-logo.png" alt="Karnataka Bank"/>
+								</td>
+								<td>
+									<a href="https://play.google.com/store/apps/details?id=com.lcode.smartz">KBL SMARTz (UPI)</a>
+								</td>
+								<td class="visible-sm-* hidden-xs">
+									<img class="img-responsive" src="http://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=UTF-8&chld=H&chl=https://play.google.com/store/apps/details?id=com.lcode.smartz" alt="qrcode"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img class="img-responsive" src="./img/banklogos/oriental-bank-of-commerce-logo.jpg" alt="OBC Bank"/>
+								</td>
+								<td>
+									<a href="https://play.google.com/store/apps/details?id=com.mgs.obcbank">OBCUPI PSP</a>
+								</td>
+								<td class="visible-sm-* hidden-xs">
+									<img class="img-responsive" src="http://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=UTF-8&chld=H&chl=https://play.google.com/store/apps/details?id=com.mgs.obcbank" alt="qrcode"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img class="img-responsive" src="./img/banklogos/pnb-logo.png" alt="Punjab National Bank"/>
+								</td>
+								<td>
+									<a href="https://play.google.com/store/apps/details?id=com.fss.pnbpsp">PNB UPI</a>
+								</td>
+								<td class="visible-sm-* hidden-xs">
+									<img class="img-responsive" src="http://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=UTF-8&chld=H&chl=https://play.google.com/store/apps/details?id=com.fss.pnbpsp" alt="qrcode"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img class="img-responsive" src="./img/banklogos/south-indian-bank-logo.jpg" alt="South Indian Bank"/>
+								</td>
+								<td>
+									<a href="https://play.google.com/store/apps/details?id=com.paymate.sib">SIB M-Pay</a>
+								</td>
+								<td class="visible-sm-* hidden-xs">
+									<img class="img-responsive" src="http://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=UTF-8&chld=H&chl=https://play.google.com/store/apps/details?id=com.paymate.sib" alt="qrcode"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img class="img-responsive" src="./img/banklogos/STATEBANKOFINDIAlogo.jpg" alt="SBI"/>
+								</td>
+								<td>
+									<a href="https://play.google.com/store/apps/details?id=com.sbi.upi">SBI Pay</a>
+								</td>
+								<td class="visible-sm-* hidden-xs">
+									<img class="img-responsive" src="http://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=UTF-8&chld=H&chl=https://play.google.com/store/apps/details?id=com.sbi.upi" alt="qrcode"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img class="img-responsive" src="./img/banklogos/tjsb-bank-logo.png" alt="TJSB Bank"/>
+								</td>
+								<td>
+									<a href="https://play.google.com/store/apps/details?id=in.co.finacus.tjsbbankpsp">Tranzapp</a>
+								</td>
+								<td class="visible-sm-* hidden-xs">
+									<img class="img-responsive" src="http://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=UTF-8&chld=H&chl=https://play.google.com/store/apps/details?id=in.co.finacus.tjsbbankpsp" alt="qrcode"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img class="img-responsive" src="./img/banklogos/uco-bank-logo.png" alt="UCO Bank"/>
+								</td>
+								<td>
+									<a href="https://play.google.com/store/apps/details?id=com.lcode.ucoupi">Uco UPI</a>
+								</td>
+								<td class="visible-sm-* hidden-xs">
+									<img class="img-responsive" src="http://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=UTF-8&chld=H&chl=https://play.google.com/store/apps/details?id=com.lcode.ucoupi" alt="qrcode"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img class="img-responsive" src="./img/banklogos/Union-Bank-India-logo.jpg" alt="Union Bank"/>
+								</td>
+								<td>
+									<a href="https://play.google.com/store/apps/details?id=com.fss.ubipsp">Union Bank UPI App</a>
+								</td>
+								<td class="visible-sm-* hidden-xs">
+									<img class="img-responsive" src="http://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=UTF-8&chld=H&chl=https://play.google.com/store/apps/details?id=com.fss.ubipsp" alt="qrcode"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img class="img-responsive" src="./img/banklogos/united-bank-of-india.png" alt="United Bank"/>
+								</td>
+								<td>
+									<a href="https://play.google.com/store/apps/details?id=com.fss.unbipsp">United UPI</a>
+								</td>
+								<td class="visible-sm-* hidden-xs">
+									<img class="img-responsive" src="http://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=UTF-8&chld=H&chl=https://play.google.com/store/apps/details?id=com.fss.unbipsp" alt="qrcode"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img class="img-responsive" src="./img/banklogos/vijaya-bank-logo.png" alt="Vijaya Bank"/>
+								</td>
+								<td>
+									<a href="https://play.google.com/store/apps/details?id=com.fss.vijayapsp">Vijaya UPI</a>
+								</td>
+								<td class="visible-sm-* hidden-xs">
+									<img class="img-responsive" src="http://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=UTF-8&chld=H&chl=https://play.google.com/store/apps/details?id=com.fss.vijayapsp" alt="qrcode"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img class="img-responsive" src="./img/banklogos/phonepe.jpg" alt="PhonePe"/>
+								</td>
+								<td>
+									<a href="https://play.google.com/store/apps/details?id=com.phonepe.app">PhonePe (Flipkart)</a>
+								</td>
+								<td class="visible-sm-* hidden-xs">
+									<img class="img-responsive" src="http://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=UTF-8&chld=H&chl=https://play.google.com/store/apps/details?id=com.phonepe.app" alt="qrcode"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img class="img-responsive" src="./img/banklogos/Trupay.png" alt="Trupay"/>
+								</td>
+								<td>
+									<a href="https://play.google.com/store/apps/details?id=com.protinus.trupay&hl=en">TruPay</a>
+								</td>
+								<td class="visible-sm-* hidden-xs">
+									<img class="img-responsive" src="http://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=UTF-8&chld=H&chl=https://play.google.com/store/apps/details?id=com.protinus.trupay&hl=en" alt="qrcode"/>
+								</td>
+							</tr>
+							
+						</table>
+					
+					</div>
+
+				</div>
+			</div>
+			<center><div id="sharesocial"/></center>
+
+		</div> <!-- end .container -->
+	</article>
+	<footer>
+		<div class="container">
+			<p class="copyright"><span data-i18n="upiqrc-footer">#CashlessConsumer Initiative. Licensed under </span><a href="https://creativecommons.org/licenses/by-sa/4.0/"><span data-i18n="upiqrc-license">CC-BY-SA 4.0</span></a> - <a href="http://github.com/srikanthlogic/CashlessConsumer"><span data-i18n="upiqrc-codelink">Code</span></a></p>
 		</div>
-		<br/>
-		<div class="row">
-			Scan QR Code to install your preferred android app. Any UPI app will work with any bank supporting UPI. iOS / Windows applications coming soon. (<a href="http://www.npci.org.in/UPI_Livemembers.aspx">List</a>) - (<a href="https://docs.google.com/spreadsheets/d/1HKl-gMSzjI-ygRkYTvqpJRwSW0ZI-xj-0aoiNdTum2g/edit#gid=939250318">App Feature Comparison Matrix</a>)
-		</div>
-
-		<div class="row">
-						<div class="one-third column" style="margin-top: 10%">
-								<img src="./img/banklogos/andhrabank.png" alt="Andhra Bank"/>
-						</div>
-						<div class="one-third column" style="margin-top: 10%">
-								<h5><a href="https://play.google.com/store/apps/details?id=com.olive.andhra.upi">Andhra Bank ONE - UPI App</a></h5>
-						</div>
-						<div class="one-third column" style="margin-top: 2%" id="Andhra Bankqrcode">
-								<img src="http://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=UTF-8&chld=H&chl=https://play.google.com/store/apps/details?id=com.olive.andhra.upi" alt="qrcode"/>
-						</div>
-				</div>
-		<div class="row">
-						<div class="one-third column" style="margin-top: 5%">
-								<img src="./img/banklogos/axisbank.jpg" width="" alt="Axis Bank"/>
-						</div>
-						<div class="one-third column" style="margin-top: 10%">
-								<h5><a href="https://play.google.com/store/apps/details?id=com.upi.axispay">AxisPay</a></h5>
-						</div>
-						<div class="one-third column" style="margin-top: 2%" id="Axis Bankqrcode">
-								<img src="http://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=UTF-8&chld=H&chl=https://play.google.com/store/apps/details?id=com.upi.axispay" alt="qrcode"/>
-						</div>
-				</div>
-<div class="row">
-						<div class="one-third column" style="margin-top: 5%">
-								<img src="./img/banklogos/Bank-of-Maharashtra-Logo.jpg" alt="Bank of Maharashtra"/>
-						</div>
-						<div class="one-third column" style="margin-top: 10%">
-								<h5><a href="https://play.google.com/store/apps/details?id=com.infrasofttech.mahaupi">Maha UPI</a></h5>
-						</div>
-						<div class="one-third column" style="margin-top: 2%" id="Bank of Maharashtraqrcode">
-								<img src="http://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=UTF-8&chld=H&chl=https://play.google.com/store/apps/details?id=com.infrasofttech.mahaupi" alt="qrcode"/>
-						</div>
-				</div>
-<div class="row">
-						<div class="one-third column" style="margin-top: 5%">
-								<img src="./img/banklogos/canara-bank-logo.jpg" alt="Canara Bank"/>
-						</div>
-						<div class="one-third column" style="margin-top: 10%">
-								<h5><a href="https://play.google.com/store/apps/details?id=upi.npst.com.upicanara">Canara Bank UPI- empower</a></h5>
-						</div>
-						<div class="one-third column" style="margin-top: 2%" id="Canara Bankqrcode">
-								<img src="http://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=UTF-8&chld=H&chl=https://play.google.com/store/apps/details?id=upi.npst.com.upicanara" alt="qrcode"/>
-						</div>
-				</div>
-<div class="row">
-						<div class="one-third column" style="margin-top: 5%">
-								<img src="./img/banklogos/catholic-syrian-bank.png" alt="Catholic Syrian Bank"/>
-						</div>
-						<div class="one-third column" style="margin-top: 10%">
-								<h5><a href="https://play.google.com/store/apps/details?id=com.lcode.csbupi">CSB-UPI</a></h5>
-						</div>
-						<div class="one-third column" style="margin-top: 2%" id="Catholic Syrian Bankqrcode">
-								<img src="http://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=UTF-8&chld=H&chl=https://play.google.com/store/apps/details?id=com.lcode.csbupi" alt="qrcode"/>
-						</div>
-				</div>
-<div class="row">
-						<div class="one-third column" style="margin-top: 5%">
-								<img src="./img/banklogos/dcb-bank.jpg" alt="DCB Bank"/>
-						</div>
-						<div class="one-third column" style="margin-top: 10%">
-								<h5><a href="https://play.google.com/store/apps/details?id=com.olive.dcb.upi">DCB Bank UPI App</a></h5>
-						</div>
-						<div class="one-third column" style="margin-top: 2%" id="DCB Bankqrcode">
-								<img src="http://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=UTF-8&chld=H&chl=https://play.google.com/store/apps/details?id=com.olive.dcb.upi" alt="qrcode"/>
-						</div>
-				</div>
-<div class="row">
-						<div class="one-third column" style="margin-top: 5%">
-								<img src="./img/banklogos/Federallogo.gif" alt="Federal Bank"/>
-						</div>
-						<div class="one-third column" style="margin-top: 10%">
-								<h5><a href="https://play.google.com/store/apps/details?id=com.upi.federalbank.org.lotza">Lotza-UPI</a></h5>
-						</div>
-						<div class="one-third column" style="margin-top: 2%" id="Federal Bankqrcode">
-								<img src="http://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=UTF-8&chld=H&chl=https://play.google.com/store/apps/details?id=com.upi.federalbank.org.lotza" alt="qrcode"/>
-						</div>
-				</div>
-				<div class="row">
-						<div class="one-third column" style="margin-top: 5%">
-								<img src="./img/banklogos/hdfc-bank-logo.jpg" alt="HDFC Bank"/>
-						</div>
-						<div class="one-third column" style="margin-top: 10%">
-								<h5><a href="https://play.google.com/store/apps/details?id=com.snapwork.hdfc">HDFC Bank MobileBanking</a></h5>
-						</div>
-						<div class="one-third column" style="margin-top: 2%" id="HDFC Bankqrcode">
-								<img src="http://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=UTF-8&chld=H&chl=https://play.google.com/store/apps/details?id=com.snapwork.hdfc" alt="qrcode"/>
-						</div>
-				</div>
-
-				<div class="row">
-						<div class="one-third column" style="margin-top: 5%">
-								<img src="./img/banklogos/icici-bank-logo.jpg" alt="ICICI Bank"/>
-						</div>
-						<div class="one-third column" style="margin-top: 10%">
-								<h5><a href="https://play.google.com/store/apps/details?id=com.csam.icici.bank.imobile">iMobile</a></h5>
-						</div>
-						<div class="one-third column" style="margin-top: 2%" id="ICICI Bankqrcode">
-								<img src="http://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=UTF-8&chld=H&chl=https://play.google.com/store/apps/details?id=com.csam.icici.bank.imobile" alt="qrcode"/>
-						</div>
-				</div>
-				<div class="row">
-						<div class="one-third column" style="margin-top: 5%">
-								<img src="./img/banklogos/Pockets-logo.jpg" alt="ICICI Pockets"/>
-						</div>
-						<div class="one-third column" style="margin-top: 10%">
-								<h5><a href="https://play.google.com/store/apps/details?id=com.icicibank.pockets">Pockets</a></h5>
-						</div>
-						<div class="one-third column" style="margin-top: 2%" id="ICICI Pocketsqrcode">
-								<img src="http://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=UTF-8&chld=H&chl=https://play.google.com/store/apps/details?id=com.icicibank.pockets" alt="qrcode"/>
-						</div>
-				</div>
-				<div class="row">
-						<div class="one-third column" style="margin-top: 5%">
-								<img src="./img/banklogos/karnataka-bank-logo.png" alt="Karnataka Bank"/>
-						</div>
-						<div class="one-third column" style="margin-top: 10%">
-								<h5><a href="https://play.google.com/store/apps/details?id=com.lcode.smartz">KBL SMARTz (UPI)</a></h5>
-						</div>
-						<div class="one-third column" style="margin-top: 2%" id="Karnataka Bankqrcode">
-								<img src="http://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=UTF-8&chld=H&chl=https://play.google.com/store/apps/details?id=com.lcode.smartz" alt="qrcode"/>
-						</div>
-				</div>
-				<div class="row">
-						<div class="one-third column" style="margin-top: 5%">
-								<img src="./img/banklogos/oriental-bank-of-commerce-logo.jpg" alt="OBC Bank"/>
-						</div>
-						<div class="one-third column" style="margin-top: 10%">
-								<h5><a href="https://play.google.com/store/apps/details?id=com.mgs.obcbank">OBCUPI PSP</a></h5>
-						</div>
-						<div class="one-third column" style="margin-top: 2%" id="OBC Bankqrcode">
-								<img src="http://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=UTF-8&chld=H&chl=https://play.google.com/store/apps/details?id=com.mgs.obcbank" alt="qrcode"/>
-						</div>
-				</div>
-				<div class="row">
-						<div class="one-third column" style="margin-top: 5%">
-								<img src="./img/banklogos/pnb-logo.png" alt="Punjab National Bank"/>
-						</div>
-						<div class="one-third column" style="margin-top: 10%">
-								<h5><a href="https://play.google.com/store/apps/details?id=com.fss.pnbpsp">PNB UPI</a></h5>
-						</div>
-						<div class="one-third column" style="margin-top: 2%" id="Punjab National Bankqrcode">
-								<img src="http://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=UTF-8&chld=H&chl=https://play.google.com/store/apps/details?id=com.fss.pnbpsp" alt="qrcode"/>
-						</div>
-				</div>
-				<div class="row">
-						<div class="one-third column" style="margin-top: 5%">
-								<img src="./img/banklogos/south-indian-bank-logo.jpg" alt="South Indian Bank"/>
-						</div>
-						<div class="one-third column" style="margin-top: 10%">
-								<h5><a href="https://play.google.com/store/apps/details?id=com.paymate.sib">SIB M-Pay</a></h5>
-						</div>
-						<div class="one-third column" style="margin-top: 2%" id="South Indian Bankqrcode">
-								<img src="http://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=UTF-8&chld=H&chl=https://play.google.com/store/apps/details?id=com.paymate.sib" alt="qrcode"/>
-						</div>
-				</div>
-				<div class="row">
-						<div class="one-third column" style="margin-top: 5%">
-								<img src="./img/banklogos/STATEBANKOFINDIAlogo.jpg" alt="SBI"/>
-						</div>
-						<div class="one-third column" style="margin-top: 10%">
-								<h5><a href="https://play.google.com/store/apps/details?id=com.sbi.upi">SBI Pay</a></h5>
-						</div>
-						<div class="one-third column" style="margin-top: 2%" id="SBIqrcode">
-								<img src="http://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=UTF-8&chld=H&chl=https://play.google.com/store/apps/details?id=com.sbi.upi" alt="qrcode"/>
-						</div>
-				</div>
-				<div class="row">
-						<div class="one-third column" style="margin-top: 5%">
-								<img src="./img/banklogos/tjsb-bank-logo.png" alt="TJSB Bank"/>
-						</div>
-						<div class="one-third column" style="margin-top: 10%">
-								<h5><a href="https://play.google.com/store/apps/details?id=in.co.finacus.tjsbbankpsp">Tranzapp</a></h5>
-						</div>
-						<div class="one-third column" style="margin-top: 2%" id="TJSB Bankqrcode">
-								<img src="http://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=UTF-8&chld=H&chl=https://play.google.com/store/apps/details?id=in.co.finacus.tjsbbankpsp" alt="qrcode"/>
-						</div>
-				</div>
-				<div class="row">
-						<div class="one-third column" style="margin-top: 5%">
-								<img src="./img/banklogos/uco-bank-logo.png" alt="UCO Bank"/>
-						</div>
-						<div class="one-third column" style="margin-top: 10%">
-								<h5><a href="https://play.google.com/store/apps/details?id=com.lcode.ucoupi">Uco UPI</a></h5>
-						</div>
-						<div class="one-third column" style="margin-top: 2%" id="UCO Bankqrcode">
-								<img src="http://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=UTF-8&chld=H&chl=https://play.google.com/store/apps/details?id=com.lcode.ucoupi" alt="qrcode"/>
-						</div>
-				</div>
-				<div class="row">
-						<div class="one-third column" style="margin-top: 5%">
-								<img src="./img/banklogos/Union-Bank-India-logo.jpg" alt="Union Bank"/>
-						</div>
-						<div class="one-third column" style="margin-top: 10%">
-								<h5><a href="https://play.google.com/store/apps/details?id=com.fss.ubipsp">Union Bank UPI App</a></h5>
-						</div>
-						<div class="one-third column" style="margin-top: 2%" id="Union Bankqrcode">
-								<img src="http://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=UTF-8&chld=H&chl=https://play.google.com/store/apps/details?id=com.fss.ubipsp" alt="qrcode"/>
-						</div>
-				</div>
-				<div class="row">
-						<div class="one-third column" style="margin-top: 5%">
-								<img src="./img/banklogos/united-bank-of-india.png" alt="United Bank"/>
-						</div>
-						<div class="one-third column" style="margin-top: 10%">
-								<h5><a href="https://play.google.com/store/apps/details?id=com.fss.unbipsp">United UPI</a></h5>
-						</div>
-						<div class="one-third column" style="margin-top: 2%" id="United Bankqrcode">
-								<img src="http://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=UTF-8&chld=H&chl=https://play.google.com/store/apps/details?id=com.fss.unbipsp" alt="qrcode"/>
-						</div>
-				</div>
-				<div class="row">
-						<div class="one-third column" style="margin-top: 5%">
-								<img src="./img/banklogos/vijaya-bank-logo.png" alt="Vijaya Bank"/>
-						</div>
-						<div class="one-third column" style="margin-top: 10%">
-								<h5><a href="https://play.google.com/store/apps/details?id=com.fss.vijayapsp">Vijaya UPI</a></h5>
-						</div>
-						<div class="one-third column" style="margin-top: 2%" id="Vijaya Bankqrcode">
-								<img src="http://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=UTF-8&chld=H&chl=https://play.google.com/store/apps/details?id=com.fss.vijayapsp" alt="qrcode"/>
-						</div>
-				</div>
-				<div class="row">
-						<div class="one-third column" style="margin-top: 5%">
-								<img src="./img/banklogos/phonepe.jpg" alt="PhonePe"/>
-						</div>
-						<div class="one-third column" style="margin-top: 10%">
-								<h5><a href="https://play.google.com/store/apps/details?id=com.phonepe.app">PhonePe (Flipkart)</a></h5>
-						</div>
-						<div class="one-third column" style="margin-top: 2%" id="PhonePe qrcode">
-								<img src="http://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=UTF-8&chld=H&chl=https://play.google.com/store/apps/details?id=com.phonepe.app" alt="qrcode"/>
-						</div>
-				</div>
-				<div class="row">
-						<div class="one-third column" style="margin-top: 5%">
-								<img src="./img/banklogos/Trupay.png" alt="Trupay"/>
-						</div>
-						<div class="one-third column" style="margin-top: 10%">
-								<h5><a href="https://play.google.com/store/apps/details?id=com.protinus.trupay&hl=en">TruPay</a>
-								</h5>
-						</div>
-						<div class="one-third column" style="margin-top: 2%" id="qrcode">
-								<img src="http://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=UTF-8&chld=H&chl=https://play.google.com/store/apps/details?id=com.protinus.trupay&hl=en" alt="qrcode"/>
-						</div>
-				</div>
-		<center><div id="sharesocial"/></center>
-
-	</div>
-
-<!-- End Document
-	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	</footer>
+<!-- End Document –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.jssocials/1.3.1/jssocials.min.js"></script>
 	<script>
 		$("#sharesocial").jsSocials({
 			url: "https://srikanthlogic.github.io/CashlessConsumer/applist.html",
-			text: "Get started with UPI",
+			text: "Browse all UPI Apps and learn more at #CashlessConsumer",
 			showCount: "inside",
 			showLabel: false,
 			shareIn: "popup",
@@ -318,7 +365,7 @@
 	  });
 
 	</script>
-	<script>
+		<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
