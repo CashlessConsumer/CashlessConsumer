@@ -1,84 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-	<!-- Basic Page Needs
-	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<meta charset="utf-8">
-	<title>#CashlessConsumer FAQ</title>
-	<meta name="description" content="#CashlessConsumer - FAQ">
+	<title>About | #CashlessConsumer</title>
+	<meta name="description" content="Unified Payments Interface - #CashlessConsumer initiative ">
 	<meta name="author" content="Srikanth L">
-
-	<!-- Mobile Specific Metas
-	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- FONT
-	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/touch/apple-touch-icon-144x144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/touch/apple-touch-icon-114x114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/touch/apple-touch-icon-72x72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="img/touch/apple-touch-icon-57x57-precomposed.png">
+	<link rel="shortcut icon" sizes="196x196" href="img/touch/touch-icon-196x196.png">
+	<link rel="shortcut icon" href="img/touch/apple-touch-icon.png">
+	<meta name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png">
+	<meta name="msapplication-TileColor" content="#222222">
 
-	<!-- CSS
-	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/skeleton.css">
+	<!-- FONT –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"/>
 	<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" integrity="sha384-Wrgq82RsEean5tP3NK3zWAemiNEXofJsTwTyHmNb/iL3dP/sZJ4+7sOld1uqYJtE" crossorigin="anonymous">
+
+	<!-- CSS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
 	<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.3.1/jssocials.css" />
 	<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.3.1/jssocials-theme-flat.css" />
 
-	<!-- JS
-	-------------------------------------------------- -->
-
-
-	<!-- Favicon
-	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<!-- Favicon –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<link rel="icon" type="image/png" href="images/favicon.png">
 
 </head>
 <body>
-
-	<!-- Primary Page Layout
-	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<div class="container">
-		<div class="row">
-			<h2>#CashlessConsumer FAQs</h2>
+	<header>
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#cc-navbar-collapse" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="index.html" class="navbar-brand">#CashlessConsumer</a>
+				</div>
+				<div class="collapse navbar-collapse"  id="cc-navbar-collapse">
+					<ul class="nav navbar-nav navbar-left">
+						<li><a href="./index.html">Home</a></li>
+						<li><a href="./upi-setup.html">How to Install</a></li>
+						<li><a href="./applist.html">UPI Apps</a></li>
+						<li><a href="./qrcode.html">Get QR Code</a></li>
+						<li class="active"><a href="./about.html">About</a></li>
+						<li><a href="./askus.html">Ask Us</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#"><select id="lang" onchange="updateText()">
+							<option value="en">English</option>
+							<option value="ta">தமிழ்</option>
+							<option value="kn">ಕನ್ನಡ</option>
+						</select></a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<article>
+		<div class="title-banner">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>About #CashlessConsumer</h1>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="row">
-			<div class="two columns"><a href="./index.html" >Home</a></div>
-			<div class="two columns"><a href="./upi-setup.html">UPI Setup</a></div>
-			<div class="two columns"><a href="./applist.html">UPI Apps</a></div>
-			<div class="two columns"><a href="./qrcode.html">UPI QRCode</a></div>
+		<div class="container content">
+			<div class="row">
+				<div class="col-md-12">
+				
+					<h2>What is #CashlessConsumer?</h2>
+					<p>#CashlessConsumer is a voluntary consumer awareness initiative about various cashless forms of transactions educating customers about upsides (every bank / fintech company should have told you already, we would soon tell consumer upsides) and <a href="telegra.ph/Cashless---Consumer-downsides-11-27">downsides</a> of #Cashless, security best practises, seek better consumer protection in the cashless era.</p>
+
+					<h2>Why is it focussed only on UPI?</h2>
+					<p>#CashlessConsumer is open to include all forms of cashless systems, however since volunteer time is a limited, it focusses only on #UPI.</p>
+
+					<h2>Where can I learn more on UPI?</h2>
+					<p>To learn more on UPI, <a href="www.npci.org.in/UPI_FAQs.aspx">refer to NPCI FAQs <i class="fa fa-external-link"></i></a>. We are working on a simpler, detailed FAQ from a consumer perspective. Coming soon.</p>
+
+					<h2>Who are you?</h2>
+					<p>I am Srikanth (<a href="http://twitter.com/logic" target="_blank">@logic</a>), <a href="http://blog.srik.me/2016/12/10/cashlessconsumer-why/" target="_blank">inviting more volunteers</a> to work on simplifying cashless to consumers while seeking / protecting rights as a consumer. Brickbats, offers to volunteer welcome. (Need Web designers, web / app developers, translators, social media campaigners, policy researchers, cashless consumers)  Email me :- srik dot lak at gmail dot com. Come, lets change this question into "About Us".</p>
+
+					<p class="alert alert-info"><strong>Disclaimer</strong> This site is in no way related to NPCI. The use of UPI logo is QRCode generator is within fair use clause. This site does not collect any personal data from anyone. This site is non-commercial.</p>
+
+				</div>
+			</div>
+			<center><div id="sharesocial"/></center>
+
+		</div> <!-- end .container -->
+	</article>
+	<footer>
+		<div class="container">
+			<p class="copyright"><span data-i18n="upiqrc-footer">#CashlessConsumer Initiative. Licensed under </span><a href="https://creativecommons.org/licenses/by-sa/4.0/"><span data-i18n="upiqrc-license">CC-BY-SA 4.0</span></a> - <a href="http://github.com/srikanthlogic/CashlessConsumer"><span data-i18n="upiqrc-codelink">Code</span></a></p>
 		</div>
-
-		<div class="row">
-			<h4 id="FAQ">FAQs - CashlessConsumer</h4>
-
-			<h6>Q: What is #CashlessConsumer?</h6>
-			<p> #CashlessConsumer - is a voluntary consumer awareness initiative about various cashless forms of transactions educating customers about upsides(every bank / fintech company should have told you already, we would soon tell consumer upsides) and <a href="telegra.ph/Cashless---Consumer-downsides-11-27">downsides</a> of #Cashless, security best practises, seek better consumer protection in the cashless era.</p>
-
-			<h6>Q: Why is it focussed only on UPI?</h6>
-			<p> #CashlessConsumer is open to include all forms of cashless systems, however since volunteer time is a limited, it focusses only on #UPI. </p>
-
-			<h6>Q: Where can I learn more on UPI?</h6>
-			<p> <a href="www.npci.org.in/UPI_FAQs.aspx">Refer NPCI FAQs</a>. We are working on a simpler, detailed FAQ from a consumer perspective. Coming soon </p>
-
-			<h6>Q: Who are you?</h6>
-			<p> I am Srikanth (<a href="http://twitter.com/logic">@logic</a>), <a href="http://blog.srik.me/2016/12/10/cashlessconsumer-why/">inviting more volunteers</a> to work on simplifying cashless to consumers while seeking / protecting rights as a consumer. Brickbats, offers to volunteer welcome. (Need Web designers, web / app developers, translators, social media campaigners, policy researchers, cashless consumers)  Email me :- srik dot lak at gmail dot com . Come, lets change this question into "About Us".  </p>
-
-			<h6>Disclaimer</h6>
-			<p> This site is no way related to NPCI. The use of UPI logo is QRCode generator is within fair use clause. This site does not collect any personal data from anyone. This site is non-commercial. </p>
-
-		</div>
-		<center><div id="sharesocial"/></center>
-	</div>
-	<!-- End Document
-	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	</footer>
+<!-- End Document –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.jssocials/1.3.1/jssocials.min.js"></script>
 	<script>
 		$("#sharesocial").jsSocials({
-			url: "https://srikanthlogic.github.io/CashlessConsumer/faq.html",
-			text: "Understanding #UPI #CashlessConsumer",
+			url: "https://srikanthlogic.github.io/CashlessConsumer/about.html",
+			text: "Know more about #CashlessConsumer",
 			showCount: "inside",
 			showLabel: false,
 			shareIn: "popup",
@@ -86,7 +118,7 @@
 	  });
 
 	</script>
-	<script>
+		<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -99,5 +131,4 @@
 
 
 </body>
-
 </html>
