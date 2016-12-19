@@ -5,8 +5,7 @@
 		],
 		"last-updated": "2016-12-18",
 		"locale": "kn",
-		"message-documentation": "qqq",
-		"AnotherMetadata": "AnotherMedatadataValue"
+		"message-documentation": "qqq"
 	},
 	"upiqrc-title": "ನಿಮ್ಮ ಏಕೀಕೃತ ಪಾವತಿ ಅಂತರಸಂಪರ್ಕ(UPI) ಕ್ಯೂ.ಆರ್ (QR) ಸಂಕೇತ ರಚಿಸಿ",
 	"upiqrc-sub-title": "ನಿಮ್ಮ ಸ್ನೇಹಿತರು ನಿಮಗೆ ಸುಲಭವಾಗಿ ಹಣ ಪಾವತಿಸಲು ಸಹಾಯ ಮಾಡಿ.",
@@ -20,5 +19,9 @@
 	"upiqrc-btn-download": "QR ಸಂಕೇತವನ್ನು ಇಳಿಸಿಕೊಌ",
 	"upiqrc-btn-print": "QR ಸಂಕೇತವನ್ನು ಮುದ್ರಿಸಿ",
 	"upiqrc-btn-pay": "UPI ಬಳಸಿಕೊಂಡು $1 ರಿಗೆ ಪಾವತಿಸಿ",
-	"upiqrc-btn-pay-am": "UPI ಬಳಸಿಕೊಂಡು $1 ರಿಗೆ ₹ $2 ಅನ್ನು ಪಾವತಿಸಿ"
+	"upiqrc-btn-pay-am": "UPI ಬಳಸಿಕೊಂಡು $1 ರಿಗೆ ₹ $2 ಅನ್ನು ಪಾವತಿಸಿ",
+	"upiqrc-footer" : "#CashlessConsumer Initiative. Licensed under",
+	"upiqrc-license" : "CC-BY-SA 4.0",
+	"upiqrc-codelink" : "Code",
+	"upiqrc-tweet" : "Create your #UPI QRCode now"
 }
