@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Srikanth"
+		],
+		"last-updated": "2016-12-23",
+		"locale": "en",
+		"message-documentation": "qqq"
+	},
+	"upiindex-title" : "Understanding UPI",
+	"upiindex-subtitle" : "Unified Payments Interface",
+	"upiindex-features" : "Features",
+	"upiindex-feature1" : "No need to share your bank account number",
+	"upiindex-feature2" : "No need to share your IFSC",
+	"upiindex-feature3" : "Instant transfer of money across bank accounts",
+	"upiindex-feature4" : "Use payment addresses that look like email address",
+	"upiindex-feature5" : "Send money from your bank account",
+	"upiindex-feature6" : "Receive money to your bank account",
+	"upiindex-getqrc" : "Get your QR Code"
+}
