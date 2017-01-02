@@ -2,8 +2,11 @@
 # The humans responsible & technology colophon
 
 # TEAM
-
-    Srikanth -- @logic
+    
+    Shriram Bhat -- @shrirambhat
+    Srikanth L  -- @logic
+    Veeven -- @veeven
+    Thejesh GN -- @thej
 
 # THANKS
 
